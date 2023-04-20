@@ -1,0 +1,33 @@
+@import '../Base/typography.module';
+@import '../Base/mixins.module';
+
+
+.hero{
+
+  width: 100%;
+  padding: 20% 10%;
+  @include absCenter;
+
+
+  &__sup{
+    @include subHeading;
+    margin: 1em 0;
+  }
+  &__heading1{
+    @include heading1;
+
+  }
+  &__heading2{
+    @include heading2;
+  }
+  &__sub{
+    width:65%;
+    @include para;
+    margin: 2em 0;
+  }
+  .btn{
+    @include button;
+    padding: 1.6em;
+    margin: 1em 0;
+  }
+}

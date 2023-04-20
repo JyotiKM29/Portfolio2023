@@ -1,0 +1,44 @@
+@import '../Base/variable.module';
+@import '../Base/mixins.module';
+
+.nav{
+
+    font-family: $default-font-style;
+    font-size: $default-font-size;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    // align-items: center;
+    // justify-items: center;
+
+    
+    &__logo{
+ 
+    }
+    &__tab{
+
+      .link{
+        padding: 0em 1em;
+      text-decoration: none;
+   
+      color:$color-neutral;
+      font-weight:light;
+      
+      &:hover{
+        color: $color-secondary-light;
+      }
+      }
+
+      .span{
+        margin-right: .5rem;
+        font-family:$code-font-style !important;
+        color: $color-secondary-light;
+      }
+
+      .btn{
+        @include button;
+      }
+    }
+    
+}
