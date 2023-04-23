@@ -11,9 +11,9 @@
 //Typography
 
 %primaryHeading {
-    font-size: 8rem;
+    font-size: clamp(4rem , 8vw , 8rem);
     font-weight: 600;
-    line-height: 8.8rem;
+    line-height: clamp(4.4rem , 8.8vw , 8.8rem);
 }
 
 @mixin heading1{
@@ -35,6 +35,15 @@
     color:$color-secondary-light;
 }
 
+@mixin codestyle{
+    font-family: $code-font-style;
+    font-size: 1.3rem;
+    font-weight: 100;
+    // line-height: 1.76rem;
+    // letter-spacing: .16rem;
+    
+}
+
 @mixin para{
     font-family: $default-font-style;
     font-size: 1.8rem;
@@ -48,12 +57,14 @@
     padding: .8em;
     border: 2px solid $color-secondary-light;
     border-radius: .4rem;
+    font-size: 1.8rem;
     font-style: $code-font-style;
     color: $color-secondary-light;
     letter-spacing: .16rem;
     background-color: transparent;
     text-decoration: none;
     font-weight:light;
+    cursor: pointer;
 }
 
 

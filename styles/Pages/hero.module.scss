@@ -1,9 +1,16 @@
 @import '../Base/typography.module';
 @import '../Base/mixins.module';
 
-
+.sections{
+  // position: relative;
+  // overflow-y: scroll;
+  //  z-index : 1;
 .hero{
-
+  // filter: blur(.8rem);
+  // -webkit-filter: blur(.8rem);
+  // height: 80vh;
+  position: absolute;
+  z-index : -10;
   width: 100%;
   padding: 20% 10%;
   @include absCenter;
@@ -29,5 +36,11 @@
     @include button;
     padding: 1.6em;
     margin: 1em 0;
+
+    &:hover, :active , :focus{
+      background-color:rgba($color-secondary,.1);
+    }
   }
+}
+
 }

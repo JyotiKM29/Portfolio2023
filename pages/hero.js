@@ -1,10 +1,13 @@
 import Navbar from "@/components/navbar";
 import styles from '../styles/Pages/hero.module.scss'
+// import Contact from "@/pages/contact";
 
 
-function hero() {
+
+function Hero() {
   return (
     <>
+      <div className={styles.sections} >
       <Navbar />
       <div className={styles.hero}>
         <h1 className={styles.hero__sup}>Hi, my name is</h1>
@@ -18,8 +21,11 @@ function hero() {
         </p>
         <button className={styles.btn}>Check out my project</button>
       </div>
+    
+      </div>
+      
     </>
   );
 }
 
-export default hero;
+export default Hero;
