@@ -26,6 +26,13 @@
     color:$color-neutral;
 }
 
+@mixin secondaryheading{
+    font-size: clamp(2.2rem , 1.6vw , 6rem);
+    font-weight: 600;
+    line-height: clamp(3.3rem , 1.8vw , 6.6rem);
+    color: $color-neutral-light;
+}
+
 @mixin subHeading{
     font-family: $code-font-style;
     font-size: 1.6rem;
@@ -50,7 +57,7 @@
     font-weight: 300;
     line-height: 2.4rem;
     letter-spacing: .05rem;
-    color: $color-neutral;
+    color: $color-neutral-dark;
 }
 
 @mixin button{

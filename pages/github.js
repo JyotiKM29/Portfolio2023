@@ -2,7 +2,7 @@ import styles from "../styles/Component/github.module.scss";
 import Image from "next/image";
 import data from '../components/githubDetail';
 
-function github({props}) {
+function Github() {
   return (
     <>
     <h1 className={styles.heading}>Other Noteworthy Projects</h1>
@@ -40,4 +40,4 @@ function github({props}) {
     </>
   );
 }
-export default github;
+export default Github;
