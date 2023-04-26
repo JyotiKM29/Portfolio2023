@@ -28,7 +28,7 @@
 // export default menuIcon;
 
 import { useEffect } from "react";
-import styles from "@/styles/component/navbar.module.scss";
+import styles from "../styles/Layout/hamber.module.scss";
 
 function Navbar() {
   useEffect(() => {
