@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image  from "next/image";
 import { useEffect } from "react";
 
-import styles from "@/styles/component/navbar.module.scss";
+// import styles from "@/styles/component/navbar.module.scss";
+import styles from "../styles/Component/navbar.module.scss";
 
 
 function Navbar() {
