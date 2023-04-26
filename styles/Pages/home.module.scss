@@ -2,46 +2,46 @@
 
 .container{
  
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
   display:grid;
-  grid-template-columns:10vw repeat(4,20vw) 10vw ;
-  grid-template-rows: 10rem 80vh 90vh 100vh 120vh 100vh 80vh;
-   grid-row-gap: 5vh;
+  grid-template-columns:10vw repeat(4,1fr) 10vw ;
+  grid-template-rows: 10rem 18% 20% 1rem 32% 24% 18%;
+   grid-row-gap: 1vh;
  
   .navbar{
     padding: 3em;
     grid-column: 1/span 6;
     grid-row: 1/ span 1;
-    border: 1px solid red;
+    // border: 1px solid red;
     overflow: scroll;
     }
  
   .home{
     grid-column: 2 / span 4;
     grid-row: 2/span 1;
-    border: 1px solid orange;
+    // border: 1px solid orange;
   }
   .about{
     grid-column: 2 / span 4;
     grid-row: 3/span 1;
-    border: 1px solid purple;
+    // border: 1px solid purple;
   }
   .experience{
     grid-column: 2/ span 4;
     grid-row: 4/span 1;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
   }
   .project{
      grid-column: 2/ span 4;
     grid-row: 5/span 1;
-    border: 1px solid lightgreen;
+    // border: 1px solid lightgreen;
   }
   
   .github{
      grid-column: 2/ span 4;
     grid-row: 6/span 1;
-    border: 1px solid lightblue;
+    // border: 1px solid lightblue;
 
     overflow-x:auto;
 
@@ -49,84 +49,45 @@
   .contact{
     grid-column: 2/ span 4;
     grid-row: 7/span 1;
-   border: 1px solid pink;
+  //  border: 1px solid pink;
   }
 
- 
+  @include respond(tab-port){
+    
+      display:grid;
+      grid-template-columns:12vw repeat(4,1fr) 12vw ;
+      grid-template-rows: 10rem 18% 20% 1rem 32% 28% 18%;
+      grid-row-gap: 1vh;
+  
+  }
+
+  @media (max-width:720px){
+    display:grid;
+    grid-template-columns:12vw repeat(4,1fr) 12vw ;
+    grid-template-rows: 10rem 14% 16% 1rem 24% 40% 16.2%;
+    grid-row-gap: 1vh;
+  }
+
+  @media (max-width:700px){
+    grid-template-columns:6vw repeat(4,1fr) 6vw ;
+  }
+
+  @include respond(phone){
+    grid-template-columns:6vw repeat(4,1fr) 6vw ;
+    grid-template-rows: 1.6% 12% 17% 1rem 26% 36% 16.2%;
+  }
+
+  @media (max-width:460px){
+    grid-template-rows: 1.6%  12% 18% 1rem 26% 32% 16.2%;
+    grid-row-gap: 2vh;
+  }
+
+  @media (max-width:400px){
+    grid-template-rows:1.6%  11% 18% 1rem 26% 36% 12%;
+    grid-row-gap: 2vh;
+  }
+
   
 }
 
- @include respond(tab-land){
-  .container{
- 
-    height: 100vh;
-    width: 100vw;
-    display:grid;
-    grid-template-columns:10vw repeat(4,20vw) 10vw ;
-    grid-template-rows: 10rem 80vh 60vh 40vh repeat(3, 50vh) 82vw 75vw;
-     grid-row-gap: 5vw;
-   
-    // .navbar{
-    //   padding: 3em;
-    //   grid-column: 1/span 6;
-    //   grid-row: 1/ span 1;
-    //   // background-color:red;
-    //   }
-    // .side1{
-    //   grid-column: 1/span 1;
-    //   grid-row: 1/ span 4;
-    //   background-color:blue;
-    // }
-    // .side2{
-    //   grid-column: 6/span 1;
-    //   grid-row: 1/span 4;
-    //   background-color:blue;
-    // }
-    // .home{
-    //   grid-column: 2 / span 4;
-    //   grid-row: 2/span 1;
-    //   // background-color:orange;
-    // }
-    // .about{
-    //   grid-column: 2 / span 4;
-    //   grid-row: 3/span 1;
-    //   background-color:purple;
-    // }
-    // .experience{
-    //   grid-column: 2/ span 4;
-    //   grid-row: 4/span 1;
-    //   background-color:yellow;
-    // }
-    // .project1{
-    //    grid-column: 2/ span 4;
-    //   grid-row: 5/span 1;
-    //   background-color:lightgreen;
-    // }
-    // .project2{
-    //   grid-column: 2/ span 4;
-    //   grid-row: 6/span 1;
-    //   background-color:lightgreen;
-    // }
-    // .project3{
-    //   grid-column: 2/ span 4;
-    //   grid-row: 7/span 1;
-    //   background-color:lightgreen;
-    // }
-    // .github{
-    //    grid-column: 2/ span 4;
-    //   grid-row: 8/span 1;
-    //   border: 1px solid lightblue;
-  
-    //   overflow-x:auto;
-  
-    //  }
-    // .contact{
-    //   grid-column: 2/ span 4;
-    //   grid-row: 9/span 1;
-    //  border: 1px solid pink;
-    // }
-  
-   
-    
-  }
-  }
+

@@ -12,8 +12,8 @@
   // position: absolute;
   // z-index : -10;
   width: 100%;
-  padding: 20% 10%;
-  @include absCenter;
+  padding: 10%;
+  // @include absCenter;
 
 
   &__sup{
@@ -31,14 +31,28 @@
     width:65%;
     @include para;
     margin: 2em 0;
+
+    @include respond(phone){
+      width:90%;
+    }
+    @media(max-width:400px){
+      width:100%;
+      
+    }
+
   }
   .btn{
     @include button;
     padding: 1.6em;
     margin: 1em 0;
-
+    white-space: nowrap;
     &:hover, :active , :focus{
       background-color:rgba($color-secondary,.1);
+    }
+    @media(max-width:400px){
+      width:100%;
+      padding: 1em;
+    margin: 0;
     }
   }
 }

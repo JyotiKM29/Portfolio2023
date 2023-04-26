@@ -45,19 +45,19 @@ function About() {
 
             <div className={styles.cols}>
               <div className={styles.cols__1}>
-                <div><Image className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
+                <div><Image alt="arow" className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
                 <span>Html5</span></div>
-                <div><Image className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
+                <div><Image alt="arow" className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
                 <span>CSS3</span></div>
-                <div><Image className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
+                <div><Image alt="arow" className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
                 <span>Sass</span></div>
               </div>
               <div className={styles.cols__2}>
-              <div><Image className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
+              <div><Image alt="arow" className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
                 <span>JavaScript</span></div>
-                <div><Image className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
+                <div><Image alt="arow" className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
                 <span>React</span></div>
-                <div><Image className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
+                <div><Image alt="arow" className={styles.arrow} src="/arrow.svg" width={"15"} height={"15"}></Image>
                 <span>Next.js</span></div>
               </div>
             </div>
@@ -66,7 +66,7 @@ function About() {
           {/* photo */}
           <div className={styles.content__photo}>
           
-            <Image className={styles.img} src="/jyotipic.png" width={"250"} height={"250"}></Image>
+            <Image alt="arow" className={styles.img} src="/jyotipic.png" width={"250"} height={"250"}></Image>
             <div className={styles.imgdiv}></div>
           </div>
         </div>

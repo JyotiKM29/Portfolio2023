@@ -1,6 +1,6 @@
 import '@/styles/globals.css';
 import '@/styles/styles.scss';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function App({ Component, pageProps }) {
   return (

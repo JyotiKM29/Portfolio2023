@@ -162,14 +162,14 @@
   @include respond(phone) {
     width: 100%;
     grid-template-rows: repeat(auto-fill, minmax(16%, 1fr));
-    grid-template-columns: repeat(auto-fit, 100%);
+    grid-template-columns: repeat(auto-fit, 90%);
   }
   @media (max-width: 400px) {
     width: 100%;
     // margin: 0;
     // padding: 0;
     grid-template-rows: repeat(auto-fill, minmax(15%, 1fr));
-    grid-template-columns: repeat(auto-fit, 100%);
+    grid-template-columns: repeat(auto-fit, 90%);
   }
 
   @include respond(big-desktop) {

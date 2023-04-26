@@ -13,11 +13,11 @@ function Github() {
         <div className={styles.box} key={item.id}>
           <div className={styles.upperside}>
             <div>
-              <Image src="/folder.svg" width={40} height={40}></Image>
+              <Image alt="icon" src="/folder.svg" width={40} height={40}></Image>
             </div>
             <div className={styles.upperside__icons} >
-              <Image className={styles.link} src="/github2.svg" width={22} height={22}></Image>
-              <Image className={styles.link} src="/link.svg" width={22} height={22}></Image>
+              <Image alt="icon" className={styles.link} src="/github2.svg" width={22} height={22}></Image>
+              <Image alt="icon" className={styles.link} src="/link.svg" width={22} height={22}></Image>
             </div>
           </div>
           <div className={styles.content} >
