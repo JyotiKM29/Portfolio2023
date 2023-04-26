@@ -18,16 +18,16 @@ function Layout({ children }) {
         
       <div className={styles.sidebar1}>
       <div>
-        <Image className={styles.icon} src='/github.svg' width={'30'} height={'30'}></Image>
+        <Image alt="icon" className={styles.icon} src='/github.svg' width={'30'} height={'30'}></Image>
         </div>
         <div>
-        <Image className={styles.icon} src='/codepen.svg' width={'30'} height={'30'}></Image>
+        <Image alt="icon" className={styles.icon} src='/codepen.svg' width={'30'} height={'30'}></Image>
         </div>
         <div >
-        <Image className={styles.icon} src='/linkedin.svg' width={'20'} height={'20'}></Image>
+        <Image alt="icon" className={styles.icon} src='/linkedin.svg' width={'20'} height={'20'}></Image>
         </div>
         <div >
-        <Image className={styles.icon} src='/twitter.svg' width={'20'} height={'20'}></Image>
+        <Image alt="icon" className={styles.icon} src='/twitter.svg' width={'20'} height={'20'}></Image>
         </div>
         <div className={styles.vertical}></div>
       </div>
