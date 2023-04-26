@@ -7,7 +7,8 @@ import Contact from './contact';
 import Project from './project';
 
 import styles from '../styles/Pages/home.module.scss'
-import Navbar from '@/components/navbar';
+import Navbar from '@/pages/navbar';
+import menuIcon from './menu2';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <About />
       </div>
       <div className={styles.experience} >
-        <Experience />
+        <menuIcon />
       </div>
       <div className={styles.project} >
         <Project />

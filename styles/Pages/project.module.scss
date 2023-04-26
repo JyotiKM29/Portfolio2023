@@ -1,2 +1,363 @@
 @import "../base/mixins.module";
 @import "../Base/variable.module";
+
+.project {
+  height: 100%;
+  width: 100%;
+  margin: 0 15%;
+
+  overflow: scroll;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 0;
+    padding-bottom: 2em;
+    padding-right: 1em;
+
+    &__count {
+      @include codestyle;
+      font-size: clamp(2.2rem, 1.6vw, 6rem);
+      font-weight: 600;
+      line-height: clamp(3.3rem, 1.8vw, 6.6rem);
+
+      color: $color-secondary-light;
+    }
+    &__name {
+      white-space: nowrap;
+      @include secondaryheading;
+    }
+    &__line {
+      padding-left: 1em;
+      width: 70%;
+    }
+
+    // @media (max-width: 770px) {
+    //   width: 100%;
+    // }
+  }
+
+  &__1,
+  &__3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 4em 0;
+
+    .photo {
+      width: 40%;
+      .img {
+        border-radius: 0.6rem;
+        height: 100%;
+        width: 100%;
+      }
+
+      @include respond(tab-land) {
+        width: 60%;
+      }
+    }
+    .content {
+      width: 50%;
+      position: absolute;
+      top: 5%;
+      right: 30%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: right;
+
+      &__sup {
+        @include subHeading;
+      }
+
+      &__heading {
+        @include secondaryheading;
+        margin: 0.5em 0;
+        font-size: 2rem;
+      }
+      &__box {
+        padding: 1em;
+        margin: 0.5em 0;
+        @include para;
+        background-color: $color-primary-light;
+      }
+      &__techstack {
+        white-space: nowrap;
+        font-family: $code-font-style;
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin: 0.5em 0;
+        color: $color-neutral-dark;
+      }
+      &__links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .link {
+          margin: 1rem;
+          margin-right: 0;
+        }
+      }
+
+      @include respond(tab-land) {
+        width: 60%;
+        right: 10%;
+      }
+    }
+
+    @media (max-width: 770px) {
+
+       height: 50vw;
+      .photo {
+        height:100%;
+        width: 90%;
+
+        }
+      
+
+      .content {
+        padding: 5%;
+        width: 90%;
+        height: 50vw;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        text-align: left;
+        
+        background-color: rgba($color-primary-light,.8);
+        border-radius: 0.6rem;
+
+        &__heading {
+            margin: 0;
+                    }
+
+        &__box {
+            padding: 0em;
+            margin: 5vw 0;
+            background-color: transparent;
+
+        }
+        &__links {
+          justify-content: flex-start;
+          .link {
+            margin: 1rem;
+            margin-left: 0;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    @include respond(phone){
+        height:70vw;
+        .content {
+            height: 70vw;
+            &__box{
+                margin: 7vw 0;   
+               }
+        }
+    }
+
+    @media (max-width: 500px) {
+        height:80vw;
+        .content {
+            height: 80vw;
+            &__box{
+                margin: 7vw 0;   
+               }
+        }
+    }
+
+    @media (max-width: 440px) {
+        height:92vw;
+        .content {
+            height: 92vw;
+            &__box{
+                margin: 4vw 0;   
+               }
+        }
+    }
+
+    @media (max-width: 376px) {
+        height:100vw;
+        .content {
+            height: 100vw;
+            &__box{
+                margin: 2vw 0;   
+               }
+        }
+    }
+  }
+
+  &__2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 4em 0;
+
+    .content2 {
+      width: 40%;
+      padding-top: 2%;
+      // border:1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: left;
+      
+
+      &__sup2 {
+        @include subHeading;
+      }
+
+      &__heading2 {
+        @include secondaryheading;
+        margin: 0.5em 0;
+        font-size: 2rem;
+      }
+      &__box2 {
+        padding: 1em;
+        margin: 0.5em 0;
+        @include para;
+        background-color: $color-primary-light;
+      }
+      &__techstack2 {
+        white-space: nowrap;
+        font-family: $code-font-style;
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin: 0.5em 0;
+        color: $color-neutral-dark;
+      }
+      &__links2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .link2 {
+          margin: 1rem;
+          margin-left: 0;
+        }
+      }
+
+      @include respond(tab-land) {
+        width: 60%;
+      }
+    }
+
+    .photo2 {
+      position: absolute;
+      z-index: -100;
+      left: 30%;
+      // border:1px solid rgb(255, 0, 247);
+      width: 40%;
+      .img2 {
+        border-radius: 0.6rem;
+        height: 100%;
+        width: 100%;
+      }
+
+      @include respond(tab-land) {
+        width: 60%;
+      }
+    }
+
+    @media (max-width: 770px) {
+      height: 50vw;
+      .content2 {
+        height: 50vw;
+        padding: 5%;
+        width: 90%;
+
+        text-align: left;
+
+        background-color: rgba($color-primary-light, 0.8);
+        border-radius: 0.6rem;
+
+        &__heading2 {
+margin: 0;
+        }
+
+        &__box2 {
+            padding: 0em;
+            margin: 5vw 0;
+            background-color: transparent;
+
+        }
+
+        &__links2 {
+          justify-content: flex-start;
+
+          .link2 {
+            margin: 1rem;
+            margin-left: 0;
+            margin-top: 0;
+          }
+        }
+      }
+
+      .photo2 {
+        height:100%;
+        width: 90%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+      }
+    }
+
+     @include respond(phone){
+        height:70vw;
+        .content2 {
+            height: 70vw;
+
+            &__box2{
+             margin: 7vw 0;   
+            }
+
+        }
+    }
+
+
+    @media (max-width: 500px) {
+        height:80vw;
+        .content2 {
+            height: 80vw;
+            &__box2{
+                margin: 7vw 0;   
+               }
+        }
+    }
+
+     @media (max-width: 440px) {
+        height:90vw;
+        .content2 {
+            height: 90vw;
+            &__box2{
+                margin: 4vw 0;   
+               }
+        }
+    }
+
+    @media (max-width: 376px) {
+        height:100vw;
+        .content2 {
+            height: 100vw;
+            &__box2{
+                margin: 2vw 0;   
+               }
+        }
+    }
+  }
+
+  @include respond(tab-land) {
+    width: 100%;
+    margin: 0 5%;
+  }
+}
