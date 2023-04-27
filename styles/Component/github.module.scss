@@ -25,7 +25,8 @@
   // padding: 0 2%;
   // height: 80%;
   display: grid;
-
+  overflow: visible;
+  
   grid-template-rows: repeat(auto-fill, repeat(30%, 1fr));
   grid-template-columns: repeat(auto-fit, 30%);
   gap: 1em;

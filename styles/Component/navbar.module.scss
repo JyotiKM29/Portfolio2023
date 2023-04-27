@@ -275,7 +275,7 @@
     }
   }
   .nav {
-   
+  //  position: relative;
     &__tab {
 
       // border: 1px solid white;
@@ -334,18 +334,26 @@
 
   // side bars
   .sidebar1 {
-    display: none;
-    // width: 100%;
-    // display: flex;
-    // flex-direction: row;
+    // display: none;
+    background-color: rgba($color-primary-light, 0.99);
+    border-radius: 10rem;
+    // width: 50%;
+    position: fixed;
+    bottom: 2%;
+    left: 4%;
+    right: 4%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    z-index:9999999;
 
-    // .icon {
-    //   margin: 1em;
-    // }
+    .icon {
+      margin: 1em;
+    }
 
-    // .vertical {
-    //   display: none;
-    // }
+    .vertical {
+      display: none;
+    }
   }
 
   .sidebar2 {
