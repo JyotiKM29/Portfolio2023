@@ -16,7 +16,7 @@ function App() {
     <>
     <Head>
       <title>Jyoti Km</title>
-       <link rel="icon"  href="/jyoti.ico" />
+       {/* <link rel="icon"  href="/jyoti.ico" /> */}
     </Head>
     <main>
     <div className={styles.container}>
