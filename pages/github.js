@@ -1,6 +1,7 @@
 import styles from "../styles/Component/github.module.scss";
 import Image from "next/image";
 import data from '../components/githubDetail';
+import Link from "next/link";
 
 function Github() {
   return (
@@ -16,8 +17,12 @@ function Github() {
               <Image alt="icon" src="/folder.svg" width={40} height={40}></Image>
             </div>
             <div className={styles.upperside__icons} >
+            <Link href={item?.link1 ?? '#'}>
               <Image alt="icon" className={styles.link} src="/github2.svg" width={22} height={22}></Image>
+            </Link>
+            <Link href={item?.link2 ?? '#'}>
               <Image alt="icon" className={styles.link} src="/link.svg" width={22} height={22}></Image>
+              </Link>
             </div>
           </div>
           <div className={styles.content} >
@@ -34,8 +39,9 @@ function Github() {
       ))}
       </div>
       <div className={styles.btnContainer}>
+      <Link href="https://github.com/JyotiKM29/">
       <button className={styles.btn}>Show More</button>
-
+</Link>
       </div>
     </>
   );

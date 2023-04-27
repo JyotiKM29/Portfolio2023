@@ -101,18 +101,21 @@ function Navbar() {
           </div>
         </div>
       <div className={styles.sidebar1}>
-      <div>
+      <Link href="https://github.com/JyotiKM29">
         <Image alt="icon" className={styles.icon} src='/github.svg' width={'30'} height={'30'}></Image>
-        </div>
-        <div>
+        </Link>
+        <Link href="https://codepen.io/Dev213">
         <Image alt="icon" className={styles.icon} src='/codepen.svg' width={'30'} height={'30'}></Image>
-        </div>
-        <div >
+        </Link>
+        <Link href="https://www.linkedin.com/in/jyotikmr/">
         <Image alt="icon" className={styles.icon} src='/linkedin.svg' width={'20'} height={'20'}></Image>
-        </div>
-        <div >
+        </Link>
+        <Link href="https://twitter.com/jyotis_tweet">
         <Image alt="icon" className={styles.icon} src='/twitter.svg' width={'20'} height={'20'}></Image>
-        </div>
+        </Link>
+        <Link href="https://www.instagram.com/jyotieee__/">
+        <Image alt="icon" className={styles.icon} src='/instagram.svg' width={'22'} height={'22'}></Image>
+        </Link>
         <div className={styles.vertical}></div>
       </div>
       

@@ -47,11 +47,32 @@
     margin: 4em 0;
 
     .photo {
+      position: relative;
       width: 40%;
+      
+      .tint::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 99%;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        background-color: rgba(8, 99, 76, 0.5); 
+        transition: background-color 0.5s ease-in-out; /* add transition effect */
+      }
+      
+      .tint:hover::before {
+        background-color: transparent; /* change to transparent on hover */
+      }
+
       .img {
         border-radius: 0.6rem;
         height: 100%;
         width: 100%;
+        cursor: pointer;
       }
 
       @include respond(tab-land) {
@@ -268,22 +289,89 @@
       }
     }
 
+    // .photo2 {
+    //   // position: absolute;
+    //   position: relative;
+    //   z-index: -100;
+    //   right: 10%;
+    //   // border:1px solid rgb(255, 0, 247);
+    //   width: 40%;
+
+    //   .tint2::before {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 94%;
+    //     border-radius: 0.6rem;
+    //     cursor: pointer;
+    //     background-color: rgba(8, 99, 76, 0.5);
+    //    transition: background-color 0.5s ease-in-out; 
+
+    //    @include respond(big-desktop){
+    //     width: 100%;
+    //     // height: 86%;
+    //    }
+
+    //   }
+    //   .tint2:hover::before {
+    //     background-color: transparent; /* change to transparent on hover */
+    //   }
+    //   .img2 {
+    //     border-radius: 0.6rem;
+    //     height: 100%;
+    //     width: 100%;
+    //     cursor: pointer;
+    //   }
+
+    //   @include respond(tab-land) {
+    //     width: 60%;
+    //   }
+    // }
+ 
     .photo2 {
-      position: absolute;
+      position: relative; /* add this */
       z-index: -100;
-      left: 30%;
-      // border:1px solid rgb(255, 0, 247);
+      right: 10%;
       width: 40%;
+    
+      .tint2::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* change this */
+        border-radius: 0.6rem;
+        cursor: pointer;
+        background-color: rgba(8, 99, 76, 0.5); 
+        transition: background-color 0.5s ease-in-out;
+  
+      }
+    
+      .tint2:hover::before {
+        background-color: transparent;
+      }
+    
       .img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
         border-radius: 0.6rem;
         height: 100%;
         width: 100%;
       }
-
+    
       @include respond(tab-land) {
         width: 60%;
       }
     }
+    
+    
+    
 
     @media (max-width: 770px) {
       height: 50vw;

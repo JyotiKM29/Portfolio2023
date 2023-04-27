@@ -19,7 +19,9 @@ function Hero() {
           help you create a stunning and functional website that will make your
           brand stand out and attract your target audience.
         </p>
-        <button className={styles.btn}>Check out my project</button>
+        <Link href="https://jyoti-km.vercel.app/">
+        <button  className={styles.btn}>Check out my project</button>
+        </Link>
       </div>
     
       </div>

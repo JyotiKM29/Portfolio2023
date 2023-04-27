@@ -65,8 +65,11 @@ function About() {
 
           {/* photo */}
           <div className={styles.content__photo}>
-          
+           <div className={styles.container}>
+           <div className={styles.tint}>
             <Image alt="arow" className={styles.img} src="/jyoti2.png" width={"250"} height={"250"}></Image>
+          </div>
+           </div>
             <div className={styles.imgdiv}></div>
           </div>
         </div>

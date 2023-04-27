@@ -1,5 +1,6 @@
 import styles from "../styles/Pages/project.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 function Project() {
   return (
@@ -16,12 +17,14 @@ function Project() {
         {/* project 1 */}
         <section className={styles.project__1}>
           <div className={styles.photo}>
-            <Image
-              className={styles.img}
-              src="/project2.png"
-              width={"630"}
-              height={"400"}
-            ></Image>
+            <div className={styles.tint}>
+              <Image
+                className={styles.img}
+                src="/project2.png"
+                width={630}
+                height={400}
+              ></Image>
+            </div>
           </div>
           <div className={styles.content}>
             <h4 className={styles.content__sup}>Featured Project</h4>
@@ -35,7 +38,7 @@ function Project() {
             </div>
             <h3 className={styles.content__techstack}>React Firebase CSS</h3>
             <div className={styles.content__links}>
-              <div>
+              <Link href="https://github.com/JyotiKM29/Gym-website">
                 {" "}
                 <Image
                   className={styles.link}
@@ -43,8 +46,8 @@ function Project() {
                   width={"25"}
                   height={"25"}
                 ></Image>
-              </div>
-              <div>
+              </Link>
+              <Link href="https://mellifluous-frangipane-de7d40.netlify.app/">
                 {" "}
                 <Image
                   className={styles.link}
@@ -52,7 +55,7 @@ function Project() {
                   width={"25"}
                   height={"25"}
                 ></Image>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -72,43 +75,52 @@ function Project() {
 
             <h3 className={styles.content2__techstack2}>React Firebase Sass</h3>
             <div className={styles.content2__links2}>
-              <div>
+              <Link href="https://github.com/JyotiKM29/Travel-Tutor">
                 <Image
                   className={styles.link2}
                   src="/github2.svg"
                   width={"25"}
                   height={"25"}
                 ></Image>
-              </div>
-              <div>
+              </Link>
+              <Link href="https://glowing-rolypoly-5e3772.netlify.app/">
                 <Image
                   className={styles.link2}
                   src="/link.svg"
                   width={"25"}
                   height={"25"}
                 ></Image>
-              </div>
+              </Link>
             </div>
           </div>
           <div className={styles.photo2}>
-            <Image
-              className={styles.img2}
-              src="/project4.png"
-              width={"630"}
-              height={"400"}
-            ></Image>
+            <div className={styles.tint2}>
+              <Image
+                className={styles.img2}
+                src="/project4.png"
+                width={630}
+                height={400}
+              ></Image>
+            </div>
           </div>
         </section>
 
         {/* project 3 */}
         <section className={styles.project__3}>
           <div className={styles.photo}>
-            <Image
-              className={styles.img}
-              src="/project1.png"
-              width={"630"}
-              height={"400"}
-            ></Image>
+            <div className={styles.tint}>
+            <Link href="https://town-of-books.vercel.app/" target="_blank" >
+  
+
+              <Image
+                className={styles.img}
+                src="/project1.png"
+                width={630}
+                height={400}
+              ></Image>
+               
+</Link>
+            </div>
           </div>
           <div className={styles.content}>
             <h4 className={styles.content__sup}>Featured Project</h4>
@@ -123,7 +135,7 @@ function Project() {
             </div>
             <h3 className={styles.content__techstack}>Next.js Mangodb Sass</h3>
             <div className={styles.content__links}>
-              <div>
+              <Link href="https://github.com/JyotiKM29/Major-project-Book-">
                 {" "}
                 <Image
                   className={styles.link}
@@ -131,8 +143,8 @@ function Project() {
                   width={"25"}
                   height={"25"}
                 ></Image>
-              </div>
-              <div>
+              </Link>
+              <Link href="https://town-of-books.vercel.app/">
                 {" "}
                 <Image
                   className={styles.link}
@@ -140,7 +152,7 @@ function Project() {
                   width={"25"}
                   height={"25"}
                 ></Image>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
