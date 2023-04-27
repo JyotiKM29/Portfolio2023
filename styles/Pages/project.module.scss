@@ -80,10 +80,18 @@
         font-size: 2rem;
       }
       &__box {
+        
+        width:32vw;
         padding: 1em;
         margin: 0.5em 0;
+        translate:8vw;
         @include para;
         background-color: $color-primary-light;
+
+        @media(max-width: 1500px){
+          width:100%;
+          translate:0;
+        }
       }
       &__techstack {
         white-space: nowrap;
@@ -222,10 +230,15 @@
         font-size: 2rem;
       }
       &__box2 {
+         width:32vw;
         padding: 1em;
         margin: 0.5em 0;
+        // translate:-8vw;
         @include para;
         background-color: $color-primary-light;
+        @include respond(tab-land){
+          width:85%;
+        }
       }
       &__techstack2 {
         white-space: nowrap;

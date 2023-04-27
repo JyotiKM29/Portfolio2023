@@ -1,12 +1,17 @@
 import Link from "next/link";
 import Image  from "next/image";
 import { useEffect } from "react";
+import { useRouter } from 'next/router';
 
 // import styles from "@/styles/component/navbar.module.scss";
 import styles from "../styles/Component/navbar.module.scss";
 
 
 function Navbar() {
+  const router = useRouter();
+  const downloadResume = () => {
+    router.push('/Jyoti KM.pdf');
+  };
 
   useEffect(() => {
     const menuIcon = document.querySelector(`.${styles['menu-icon']}`);
@@ -55,7 +60,7 @@ function Navbar() {
           </Link>
           {/* button */}
           <Link href="#" className={styles.link}>
-            <button className={styles.btn}>Resume</button>
+            <button onClick={downloadResume} className={styles.btn}>Resume</button>
           </Link>
           
         </div>
