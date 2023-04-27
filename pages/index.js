@@ -8,10 +8,17 @@ import Project from './project';
 
 import styles from '../styles/Pages/home.module.scss'
 import Navbar from '@/pages/navbar';
+import Head from "next/head";
 // import menuIcon from './menu2';
 
 function App() {
   return (
+    <>
+    <Head>
+      <title>Jyoti Km</title>
+       <link rel="icon"  href="/jyoti.ico" />
+    </Head>
+    <main>
     <div className={styles.container}>
       <div className={styles.navbar} >
         <Navbar />
@@ -37,6 +44,8 @@ function App() {
       </div>
 
     </div>
+    </main>
+    </>
   );
 }
 
