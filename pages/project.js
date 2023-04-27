@@ -105,7 +105,7 @@ function Project() {
           <div className={styles.photo}>
             <Image
               className={styles.img}
-              src="/project3.png"
+              src="/project1.png"
               width={"630"}
               height={"400"}
             ></Image>
