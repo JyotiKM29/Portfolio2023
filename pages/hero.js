@@ -1,6 +1,6 @@
 
 import styles from '../styles/Pages/hero.module.scss'
-import Linkgit  from 'next/link';
+import Link from 'next/link';
 
 
 
