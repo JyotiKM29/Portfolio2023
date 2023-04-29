@@ -1,0 +1,89 @@
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+  
+    .hamburgerCheckbox {
+      display: none;
+    }
+  
+    .hamburgerLabel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &:hover .hamburgerLines {
+        background-color: #ddd;
+      }
+    }
+  
+    .hamburgerLines {
+      position: relative;
+      width: 20px;
+      height: 2px;
+      background-color: #333;
+      transition: all 0.2s ease;
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #333;
+        transition: all 0.2s ease;
+      }
+  
+      &::before {
+        top: -6px;
+      }
+  
+      &::after {
+        bottom: -6px;
+      }
+    }
+  
+    .hamburgerMenu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 100vh;
+      background-color: #fff;
+      z-index: 999;
+      transform: translateX(200px);
+      transition: transform 0.3s ease;
+  
+      &.open {
+        transform: translateX(0);
+      }
+  
+      .hamburgerMenuList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .hamburgerMenuItem {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+  
+        &:last-child {
+          border-bottom: none;
+        }
+  
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+  }
+  

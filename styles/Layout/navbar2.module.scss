@@ -1,0 +1,199 @@
+@import "../Base/variable.module";
+@import "../Base/mixins.module";
+
+// $bar-width: 6rem;
+// $bar-height: .8rem;
+// $hamburger-gap: .6rem;
+// $foreground: #333;
+// $background: white;
+// $hamburger-margin: .8rem;
+// $animation-timing: 200ms ease-in-out;
+// $hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+
+
+
+
+$animation-timing: 0.3s;
+$foreground: black;
+$background: white;
+$bar-width: 2rem;
+$bar-height: 0.25rem;
+$hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+$hamburger-gap: 0.5rem;
+$hamburger-margin: 1rem;
+$x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:10;
+
+    .nav{
+       
+        // display: flex;
+        // padding: $default-font-size;
+
+        // align-items: center;
+        // justify-content: space-between;
+        // background-color: antiquewhite;
+
+        
+        .hamburger-menu {
+          display: flex;
+          flex-direction: column;
+          gap: var(--hamburger-gap);
+          width: max-content;
+          position: absolute;
+          top: var(--hamburger-margin);
+          left: var(--hamburger-margin);
+          z-index: 2;
+          cursor: pointer;
+        
+          &:has(.input:checked) {
+            --foreground: white;
+            --background: #333;
+          }
+        
+          &:has(.input:focus-visible)::before,
+          &:has(.input:focus-visible)::after,
+          .input:focus-visible {
+            border: 1px solid var(--background);
+            box-shadow: 0 0 0 1px var(--foreground);
+          }
+        
+          &::before,
+          &::after,
+          .input {
+            content: "";
+            width: var(--bar-width);
+            height: var(--bar-height);
+            background-color: var(--foreground);
+            border-radius: 9999px;
+            transform-origin: left center;
+            transition: opacity var(--animation-timing), width var(--animation-timing),
+              rotate var(--animation-timing), translate var(--animation-timing),
+              background-color var(--animation-timing);
+          }
+        
+          .input {
+            appearance: none;
+            padding: 0;
+            margin: 0;
+            outline: none;
+            pointer-events: none;
+          }
+        
+          &:has(.input:checked)::before {
+            transform: rotate(45deg);
+            width: var(--x-width);
+            transform-origin: center center;
+            translate: 0 calc(var(--bar-height) / -2);
+          }
+        
+          &:has(.input:checked)::after {
+            transform: rotate(-45deg);
+            width: var(--x-width);
+            transform-origin: center center;
+            translate: 0 calc(var(--bar-height) / 2);
+          }
+        
+          .input:checked {
+            opacity: 0;
+            width: 0;
+          }
+        }
+        
+        .sidebar {
+          transition: transform var(--animation-timing);
+          transform: translateX(-100%);
+          padding: 0.5rem 1rem;
+          padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+          background-color: var(--foreground);
+          color: var(--background);
+          max-width: 10rem;
+          min-height: 100vh;
+        
+          .hamburger-menu:has(.input:checked) + & {
+            transform: translateX(0);
+          }
+        }
+        
+ 
+  .hamburger:has(input:focus-visible)::before,
+  .hamburger:has(input:focus-visible)::after,
+  .hamburger input:focus-visible {
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
+  }
+  
+  .hamburger::before,
+  .hamburger::after,
+  .hamburger input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+      rotate var(--animation-timing), translate var(--animation-timing),
+      background-color var(--animation-timing);
+  }
+  
+  .hamburger input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .hamburger:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  
+  .hamburger:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+  
+  .hamburger input:checked {
+    opacity: 0;
+    width: 0;
+  }
+  
+  .sidebar {
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: var(--foreground);
+    color: var(--background);
+    max-width: 10rem;
+    min-height: 100vh;
+  }
+  
+  .hamburger:has(input:checked) + .sidebar {
+    translate: 0;
+  }
+  
+
+       
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav{
+
+        &__menulist{
+            flex-direction: row;
+            column-gap: 2.4rem;
+
+        }
+    }
+
+}
