@@ -1,89 +1,98 @@
-.hamburger {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    margin-left: auto;
+$bar-width: 6rem;
+$bar-height: 0.8rem;
+$hamburger-gap: 0.6rem;
+$hamburger-margin: 4rem;
+$hamburger-height: calc(($bar-height) * 3 + ($hamburger-gap * 2));
+
+$foreground: #333;
+$background: white;
+
+$animation-timing: 200ms ease-in-out;
+$x-width: calc($hamburger-height * 1.41421356237);
+
+.navbar {
+  // float: right;
+  
+
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    gap: $hamburger-gap;
+    // background-color: red;
+    width: max-content;
+
+    // position: relative;
+    position: absolute;
+    top: $hamburger-margin;
+    right: 2rem;
+    z-index: 1;
     cursor: pointer;
-  
-    .hamburgerCheckbox {
-      display: none;
+
+    &::before,
+    &::after,
+    & .input {
+      content: "";
+      width: $bar-width;
+      height: $bar-height;
+      background-color: $foreground;
+      border-radius: 999rem;
+
+      transform-origin: left center;
+      transition: opacity $animation-timing, width $animation-timing,
+        rotate $animation-timing, translate $animation-timing,
+        background-color $animation-timing;
     }
-  
-    .hamburgerLabel {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  
-      &:hover .hamburgerLines {
-        background-color: #ddd;
-      }
+
+    & .input {
+      appearance: none;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      pointer-events: none;
     }
-  
-    .hamburgerLines {
-      position: relative;
-      width: 20px;
-      height: 2px;
-      background-color: #333;
-      transition: all 0.2s ease;
-  
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 2px;
-        background-color: #333;
-        transition: all 0.2s ease;
-      }
-  
-      &::before {
-        top: -6px;
-      }
-  
-      &::after {
-        bottom: -6px;
-      }
+
+    &:has(.input:checked)::before {
+      rotate: 45deg;
+      width: $x-width;
+      translate: 0 calc($bar-height / -2);
     }
-  
-    .hamburgerMenu {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 200px;
-      height: 100vh;
-      background-color: #fff;
-      z-index: 999;
-      transform: translateX(200px);
-      transition: transform 0.3s ease;
-  
-      &.open {
-        transform: translateX(0);
-      }
-  
-      .hamburgerMenuList {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-  
-      .hamburgerMenuItem {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-  
-        &:last-child {
-          border-bottom: none;
-        }
-  
-        a {
-          text-decoration: none;
-          color: #333;
-        }
-      }
+
+    &:has(.input:checked)::after {
+      rotate: -45deg;
+      width: $x-width;
+      translate: 0 calc($bar-height / 2);
+    }
+
+    & .input:checked {
+      // background-color: red;
+      opacity: 0;
+      width: 0;
+    }
+
+    &:has(.input::checked){
+
+      
+      $foreground: white;
+      $background: #333;
     }
   }
-  
+
+  .sidebar{
+    transition: translate $animation-timing;
+    translate: -200%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 1rem 2rem;
+    padding-top: calc($hamburger-height + $hamburger-margin + 1rem);
+    background-color: $foreground;
+    color: $background;
+    width: 55vw;
+    min-height: 100vh;
+  }
+
+  .hamburgerMenu:has(.input:checked) + .sidebar{
+    translate: 0;
+  }
+}
