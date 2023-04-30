@@ -14,8 +14,8 @@ function Hero() {
         <h2 className={styles.hero__heading1}>Jyoti Kumari.</h2>
         <h3 className={styles.hero__heading2}>I build things for the web.</h3>
         <p className={styles.hero__sub}>
-          I’m a software engineer , I m Specialise in Fronted web devpnment My
-          expertise in Figma , HTML, CSS, JS, React, Next.js and MongoDB, can
+          I’m a software engineer , I m Specialise in <span style={{color:"#7cf1e2"}}>Fronted web developer. </span> My
+          expertise in <span style={{color:"#7cf1e2"}}>Figma , HTML, CSS, JS, React, Next.js </span> and MongoDB, can
           help you create a stunning and functional website that will make your
           brand stand out and attract your target audience.
         </p>

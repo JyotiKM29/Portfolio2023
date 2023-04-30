@@ -1,5 +1,6 @@
 import styles from "../styles/Pages/about.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   return (
@@ -22,20 +23,20 @@ function About() {
             <p className={styles.p}>
               Hello ! , My name is Jyoti KM. I enjoy creating things that live
               on the internet. My interest in web development started back in
-              2014 when I decided to try animate custom heading on webpage turns
+              2017 when I decided to try animate custom heading on webpage turns
               out take computer Science subject in school to Software
               Engineering Branch in my b.tech Degree.
             </p>
 
             <p className={styles.p}>
               I can help you create a website that not only looks great but also
-              drives traffic and boosts conversions. Let me put my skills to
+              <span style={{color:"#7cf1e2"}}>drives traffic and boosts conversions </span>. Let me put my skills to
               work and help you take your brand to the next level with a
               visually stunning and user-friendly website.
             </p>
 
             <p className={styles.p}>
-              I recently build Town of Book website from scratch UI design to
+              I recently build <Link style={{color:"#7cf1e2"}} href='https://town-of-books.vercel.app/'>Town of Book </Link> website from scratch UI design to
               code design to add functionality to store data to authetication.
             </p>
 

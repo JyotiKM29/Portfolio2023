@@ -32,7 +32,7 @@ function Project() {
             <div className={styles.content__box}>
               <p>
                 It is gym website which used by gym user to get Information
-                about gym , they can login and Sign in. they can check their
+                about gym , they can <span style={{color:"#7cf1e2"}}>login and Sign in.</span> they can check their
                 program , plans and other Info.
               </p>
             </div>
@@ -67,8 +67,8 @@ function Project() {
             <h2 className={styles.content2__heading2}>Travel Tour</h2>
             <div className={styles.content2__box2}>
               <p>
-                It is travel website , which a lot Visually appiling animation,
-                User can login and Sign . Stripe Payment method is added. there
+                It is travel website , which has a lot <span style={{color:"#7cf1e2"}}>Visually appiling animation, </span>
+                User can login and Sign .<span style={{color:"#7cf1e2"}}> Stripe Payment </span>method is added. there
                 subscribtion cards to book trip plan and user Testimonials.
               </p>
             </div>
@@ -129,8 +129,8 @@ function Project() {
               <p>
                 This website used for renting books and buy books on rent. Here
                 Simple readers can also upload their book easily and rent that.
-                User can register, sign in , Sign up , Favourite tab , dashboard
-                tab and payment option.
+                User can <span style={{color:"#7cf1e2"}}>register, sign in , Sign up , Favourite tab , dashboard
+                tab and payment </span>option.
               </p>
             </div>
             <h3 className={styles.content__techstack}>Next.js Mangodb Sass</h3>
