@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: row;
     margin: 4em 0;
+    z-index: -10;
 
     .photo {
       position: relative;
@@ -265,6 +266,7 @@
     display: flex;
     flex-direction: row;
     margin: 4em 0;
+    z-index: -10;
 
     .content2 {
       width: 50%;

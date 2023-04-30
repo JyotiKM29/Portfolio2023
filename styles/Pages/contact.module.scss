@@ -2,7 +2,8 @@
 @import "../Base/mixins.module";
 
 .contactpage {
-    position: relative;
+  position: relative;
+  z-index: -10;
   height: 100%;
 //   width: 100%;
   display: flex;
