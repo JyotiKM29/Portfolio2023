@@ -3,20 +3,12 @@
 
 .sections{
   padding: 0 8%;
-  // position: relative;
-  // overflow-y: scroll;
-  //  z-index : 1;
+
 .hero{
-  // filter: blur(.8rem);
-  // -webkit-filter: blur(.8rem);
-  // height: 80vh;
-  // position: absolute;
-  // z-index : -10;
+ 
   width: 100%;
   padding: 10%;
-  // @include absCenter;
-
-
+ 
   &__sup{
     @include subHeading;
     margin: 1em 0;
@@ -58,4 +50,8 @@
   }
 }
 
+ @media(max-width: 700px){
+  position: absolute;
+  top:10%;
+ }
 }

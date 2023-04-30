@@ -28,7 +28,7 @@ $x-width: calc($hamburger-height * 1.41421356237);
     position: absolute;
     top: $hamburger-margin;
     right: 2rem;
-    z-index: 1;
+    z-index: 99999999999999;
     cursor: pointer;
 
     &::before,
