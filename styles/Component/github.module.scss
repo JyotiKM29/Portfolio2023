@@ -130,7 +130,7 @@
     }
 
     @media (max-width: 400px) {
-      width: 80vw;
+      width: 74vw;
       height: 70vw;
     }
 
@@ -167,14 +167,14 @@
   @include respond(phone) {
     width: 100%;
     grid-template-rows: repeat(auto-fill, minmax(16%, 1fr));
-    grid-template-columns: repeat(auto-fit, 90%);
+    grid-template-columns: repeat(auto-fit, 100%);
   }
   @media (max-width: 400px) {
     width: 100%;
     // margin: 0;
     // padding: 0;
     grid-template-rows: repeat(auto-fill, minmax(15%, 1fr));
-    grid-template-columns: repeat(auto-fit, 96%);
+    grid-template-columns: repeat(auto-fit, 100%);
   }
 
   @include respond(big-desktop) {

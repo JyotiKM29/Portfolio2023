@@ -20,38 +20,38 @@
   .home{
     grid-column: 2 / span 4;
     grid-row: 1/span 1;
-    border: 1px solid orange;
+    // border: 1px solid orange;
   }
   .about{
     
     grid-column: 2 / span 4;
     grid-row: 2/span 1;
-    border: 1px solid purple;
+    // border: 1px solid purple;
   }
   .experience{
     grid-column: 2/ span 4;
     grid-row: 3/span 1;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
   }
   .project{
     // padding: 4rem;
      grid-column: 2/ span 4;
     grid-row: 4/span 1;
-    border: 1px solid lightgreen;
+    // border: 1px solid lightgreen;
   }
   
   .github{
      grid-column: 2/ span 4;
     grid-row: 5/span 1;
-    border: 1px solid lightblue;
+    // border: 1px solid lightblue;
 
-    overflow-x:auto;
+    // overflow-x:auto;
 
    }
   .contact{
     grid-column: 2/ span 4;
     grid-row: 6/span 1;
-   border: 1px solid pink;
+  //  border: 1px solid pink;
   }
 
   @include respond(tab-port){
