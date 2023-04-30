@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image  from "next/image";
-import { useEffect } from "react";
+
 import { useRouter } from 'next/router';
 
 // import styles from "@/styles/component/navbar.module.scss";
@@ -13,23 +13,9 @@ function Navbar() {
     router.push('/Jyoti KM.pdf');
   };
 
-  useEffect(() => {
-    const menuIcon = document.querySelector(`.${styles['menu-icon']}`);
-    const menuIconLines = document.querySelectorAll(`.${styles['menu-icon']} div`);
+  
     
-    function toggleActiveClass() {
-      menuIcon.classList.toggle(styles.active);
-      menuIconLines.forEach((div) => {
-        div.classList.remove(styles['no-animation']);
-      });
-    }
 
-    menuIcon.addEventListener('click', toggleActiveClass);
-
-    return () => {
-      menuIcon.removeEventListener('click', toggleActiveClass);
-    };
-  }, []);
  
   return (
     <>
@@ -67,39 +53,9 @@ function Navbar() {
 
        
       </div>
-      {/* <div className={styles.menu}>
-            <div className={styles.frame}>
-              Menu
-              <div className={styles.center}>
-                <div
-                  className={styles['menu-icon']}
-                  onClick={() => {
-                    document.querySelector(`.${styles['menu-icon']}`).classList.toggle(styles.active);
-                    document.querySelectorAll(`.${styles['menu-icon']} div`).forEach((div) => {
-                      div.classList.remove(styles['no-animation']);
-                    });
-                  }}
-                >
-                  <div className={`${styles['line-1']} ${styles['no-animation']}`}></div>
-                  <div className={`${styles['line-2']} ${styles['no-animation']}`}></div>
-                  <div className={`${styles['line-3']} ${styles['no-animation']}`}></div>
-                </div>
-              </div>
-            </div>
-          </div> */}
+     
 
-          <div className={styles.menu}>
-          <div className={styles.frame}>
-            
-            <div className={styles.center}>
-              <div className={styles['menu-icon']}>
-                <div className={`${styles['line-1']} ${styles['no-animation']}`}></div>
-                <div className={`${styles['line-2']} ${styles['no-animation']}`}></div>
-                <div className={`${styles['line-3']} ${styles['no-animation']}`}></div>
-              </div>
-            </div>
-          </div>
-        </div>
+         
       <div className={styles.sidebar1}>
       <Link href="https://github.com/JyotiKM29">
         <Image alt="icon" className={styles.icon} src='/github.svg' width={'22'} height={'22'}></Image>

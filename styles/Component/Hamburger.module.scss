@@ -1,5 +1,8 @@
-$bar-width: 6rem;
-$bar-height: 0.8rem;
+@import "../Base/variable.module";
+@import "../Base/mixins.module";
+
+$bar-width: 4rem;
+$bar-height: 0.4rem;
 $hamburger-gap: 0.6rem;
 $hamburger-margin: 4rem;
 $hamburger-height: calc(($bar-height) * 3 + ($hamburger-gap * 2));
@@ -34,7 +37,7 @@ $x-width: calc($hamburger-height * 1.41421356237);
       content: "";
       width: $bar-width;
       height: $bar-height;
-      background-color: $foreground;
+      background-color: #7cf1e2;
       border-radius: 999rem;
 
       transform-origin: left center;
@@ -70,11 +73,19 @@ $x-width: calc($hamburger-height * 1.41421356237);
     }
 
     &:has(.input::checked){
-
-      
       $foreground: white;
       $background: #333;
     }
+
+    &:has(.input:focus-visible)::before,
+    &:has(.input:focus-visible)::after,
+    & .input:focus-visible {
+      
+      border: .1rem solid $background;
+      box-shadow: 0 0 0 .1rem $foreground;
+    }
+
+
   }
 
   .sidebar{
@@ -86,13 +97,59 @@ $x-width: calc($hamburger-height * 1.41421356237);
 
     padding: 1rem 2rem;
     padding-top: calc($hamburger-height + $hamburger-margin + 1rem);
-    background-color: $foreground;
+    background-color: #0C2240;
     color: $background;
     width: 55vw;
     min-height: 100vh;
+
+    .nav {
+      padding: 20% 0;
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+ gap: 2rem;
+      .link {
+        // display:none;
+        padding: 0em 1em;
+        text-decoration: none;
+  
+        color: $color-neutral;
+        font-weight: light;
+        // border: 1px solid lightgreen;
+  
+        &:hover {
+          color: $color-secondary-light;
+        }
+      }
+  
+      .span {
+        margin-right: 0.5rem;
+        font-family: $code-font-style !important;
+        color: $color-secondary-light;
+      }
+  
+      .btn {
+        @include button;
+  
+        &:hover,
+        :active,
+        :focus {
+          background-color: rgba($color-secondary, 0.1);
+        }
+      }
+  
+     
+    }
+
+
+
   }
 
   .hamburgerMenu:has(.input:checked) + .sidebar{
     translate: 0;
+  }
+
+  @media(min-width:700px){
+    display: none;
   }
 }
