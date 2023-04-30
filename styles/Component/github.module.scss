@@ -17,6 +17,8 @@
 }
 
 .container {
+  
+  padding: 0 8%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +173,7 @@
     // margin: 0;
     // padding: 0;
     grid-template-rows: repeat(auto-fill, minmax(15%, 1fr));
-    grid-template-columns: repeat(auto-fit, 90%);
+    grid-template-columns: repeat(auto-fit, 96%);
   }
 
   @include respond(big-desktop) {

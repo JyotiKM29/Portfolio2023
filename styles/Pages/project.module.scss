@@ -2,10 +2,12 @@
 @import "../Base/variable.module";
 
 .project {
+  // border: 1px solid red ;
   height: 100%;
   width: 100%;
-  margin: 0 15%;
-
+  // margin-left: 10%;
+  padding-left:20%;
+  // padding-right:15%;
   overflow: visible;
 
   .title {
@@ -41,6 +43,8 @@
 
   &__1,
   &__3 {
+  
+    // border: 1px solid red ;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -48,7 +52,7 @@
 
     .photo {
       position: relative;
-      width: 40%;
+      width: 45%;
       
       .tint::before {
         content: "";
@@ -69,21 +73,34 @@
       }
 
       .img {
+        position: absolute;
+        top: 0;
+        left: 0;
         border-radius: 0.6rem;
         height: 100%;
         width: 100%;
-        cursor: pointer;
+
+        @include respond(tab-port){
+          height: 80%;
+        }
+
+        @media (max-width: 770px) {
+          height: 100%;
+        width: 112%;
+        }
       }
 
       @include respond(tab-land) {
-        width: 60%;
+        width: 80%;
       }
     }
     .content {
+      // border: 1px solid green;
       width: 50%;
-      position: absolute;
-      top: 5%;
-      right: 30%;
+      translate:-35%;
+      // position: absolute;
+      // top: 5%;
+      // right: 30%;
 
       display: flex;
       flex-direction: column;
@@ -102,10 +119,10 @@
       }
       &__box {
         
-        width:32vw;
-        padding: 1em;
+        // width:32vw;
+        padding: 1.5em;
         margin: 0.5em 0;
-        translate:8vw;
+       
         @include para;
         background-color: $color-primary-light;
 
@@ -134,23 +151,38 @@
         }
       }
 
+     
       @include respond(tab-land) {
         width: 60%;
         right: 10%;
       }
+     
+    }
+
+    @include respond(tab-port){
+      .photo{
+        // height:0%;
+        // width: 90%;
+      }
+      .content{
+        height:100%;
+        width: 90%;
+      }
     }
 
     @media (max-width: 770px) {
-
+      padding:0%;
+      width: 100%;
        height: 50vw;
       .photo {
-        height:100%;
-        width: 90%;
+        // height:100%;
+        // width: 90%;
 
         }
       
 
       .content {
+        translate:0%;
         padding: 5%;
         width: 90%;
         height: 50vw;
@@ -228,13 +260,14 @@
   }
 
   &__2 {
+    // border: 1px solid red ;
     position: relative;
     display: flex;
     flex-direction: row;
     margin: 4em 0;
 
     .content2 {
-      width: 40%;
+      width: 50%;
       padding-top: 2%;
       // border:1px solid red;
       display: flex;
@@ -254,7 +287,7 @@
         font-size: 2rem;
       }
       &__box2 {
-         width:32vw;
+         width:90%;
         padding: 1em;
         margin: 0.5em 0;
         // translate:-8vw;
@@ -285,57 +318,17 @@
       }
 
       @include respond(tab-land) {
-        width: 60%;
+        width: 80%;
       }
     }
 
-    // .photo2 {
-    //   // position: absolute;
-    //   position: relative;
-    //   z-index: -100;
-    //   right: 10%;
-    //   // border:1px solid rgb(255, 0, 247);
-    //   width: 40%;
-
-    //   .tint2::before {
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 94%;
-    //     border-radius: 0.6rem;
-    //     cursor: pointer;
-    //     background-color: rgba(8, 99, 76, 0.5);
-    //    transition: background-color 0.5s ease-in-out; 
-
-    //    @include respond(big-desktop){
-    //     width: 100%;
-    //     // height: 86%;
-    //    }
-
-    //   }
-    //   .tint2:hover::before {
-    //     background-color: transparent; /* change to transparent on hover */
-    //   }
-    //   .img2 {
-    //     border-radius: 0.6rem;
-    //     height: 100%;
-    //     width: 100%;
-    //     cursor: pointer;
-    //   }
-
-    //   @include respond(tab-land) {
-    //     width: 60%;
-    //   }
-    // }
- 
     .photo2 {
       position: relative; /* add this */
       z-index: -100;
       right: 10%;
-      width: 40%;
+      width: 50%;
+      translate:-24%;
+      // height: 100%;
     
       .tint2::before {
         content: "";
@@ -363,11 +356,22 @@
         border-radius: 0.6rem;
         height: 100%;
         width: 100%;
+
+        
+        @include respond(tab-port){
+          height: 80%;
+        }
+        @media (max-width: 770px) {
+          height: 100%;
+        width: 100%;
+        }
+      }
+      
+      @include respond(tab-land){
+        translate:-12%;
+        width: 70%;
       }
     
-      @include respond(tab-land) {
-        width: 60%;
-      }
     }
     
     
@@ -410,6 +414,7 @@ margin: 0;
       }
 
       .photo2 {
+        translate:0%;
         height:100%;
         width: 90%;
         position: absolute;
@@ -417,6 +422,8 @@ margin: 0;
         left: 0%;
       }
     }
+
+    
 
      @include respond(phone){
         height:70vw;
@@ -462,8 +469,14 @@ margin: 0;
     }
   }
 
+  @include respond(tab-port) {
+    
+    padding-left:0%;
+    padding-right:0%;
+  }
   @include respond(tab-land) {
-    width: 100%;
-    margin: 0 5%;
+    // width: 100%;
+    padding-left:15%;
+    padding-right:0%;
   }
 }

@@ -4,7 +4,7 @@
 .about {
   height: 100%;
   width: 100%;
-  padding: 10% 14%;
+  padding: 10% 20%;
 
    overflow: visible;
   .title {
@@ -225,7 +225,7 @@
         }
         &__photo {
           margin-top: 10%;
-          width: 60%;
+          width: 50%;
         }
       }
   }
@@ -237,6 +237,6 @@
   }
 
   @include respond(tab-port) {
-    padding: 0;
+    padding: 3rem;
   }
 }

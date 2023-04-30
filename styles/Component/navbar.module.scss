@@ -2,6 +2,7 @@
 @import "../Base/mixins.module";
 
 .nav {
+  padding: 4rem;
   font-family: $default-font-style;
   font-size: $default-font-size;
   display: flex;
@@ -69,6 +70,7 @@
 
   position: fixed;
   bottom: 0%;
+  left: 2%;
 
   .icon {
     margin: 0.5em;
@@ -95,7 +97,7 @@
 
   position: fixed;
   bottom: 0%;
-  right: 4%;
+  right: 2%;
 
   .email {
     //  border: 1px solid white;

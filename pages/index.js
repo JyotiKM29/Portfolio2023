@@ -20,9 +20,9 @@ function App() {
     </Head>
     <main>
     <div className={styles.container}>
-      <div className={styles.navbar} >
+      {/* <div className={styles.navbar} >
         <Navbar />
-      </div>
+      </div> */}
       <div className={styles.home} >
         <Hero />
       </div>
