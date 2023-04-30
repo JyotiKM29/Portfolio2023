@@ -67,6 +67,14 @@
         cursor: pointer;
         background-color: rgba(8, 99, 76, 0.5); 
         transition: background-color 0.5s ease-in-out; /* add transition effect */
+        @include respond(tab-port){
+          height: 80%;
+        }
+
+        @media (max-width: 770px) {
+          height: 100%;
+        width: 112%;
+        }
       }
       
       .tint:hover::before {
@@ -345,6 +353,13 @@
         background-color: rgba(8, 99, 76, 0.5); 
         transition: background-color 0.5s ease-in-out;
   
+        @include respond(tab-port){
+          height: 80%;
+        }
+        @media (max-width: 770px) {
+          height: 100%;
+        width: 100%;
+        }
       }
     
       .tint2:hover::before {

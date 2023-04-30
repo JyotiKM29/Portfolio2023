@@ -20,30 +20,30 @@
   .home{
     grid-column: 2 / span 4;
     grid-row: 1/span 1;
-    // border: 1px solid orange;
+    border: 1px solid orange;
   }
   .about{
     
     grid-column: 2 / span 4;
     grid-row: 2/span 1;
-    // border: 1px solid purple;
+    border: 1px solid purple;
   }
   .experience{
     grid-column: 2/ span 4;
     grid-row: 3/span 1;
-    // border: 1px solid yellow;
+    border: 1px solid yellow;
   }
   .project{
     // padding: 4rem;
      grid-column: 2/ span 4;
     grid-row: 4/span 1;
-    // border: 1px solid lightgreen;
+    border: 1px solid lightgreen;
   }
   
   .github{
      grid-column: 2/ span 4;
     grid-row: 5/span 1;
-    // border: 1px solid lightblue;
+    border: 1px solid lightblue;
 
     overflow-x:auto;
 
@@ -51,7 +51,7 @@
   .contact{
     grid-column: 2/ span 4;
     grid-row: 6/span 1;
-  //  border: 1px solid pink;
+   border: 1px solid pink;
   }
 
   @include respond(tab-port){
@@ -71,22 +71,24 @@
   }
 
   @media (max-width:700px){
-    grid-template-columns:.6rem repeat(4,1fr) .6rem ;
+    grid-template-columns:2rem repeat(4,1fr) 2rem ;
+    grid-template-rows:  14% 19% 1rem 24% 46% 16.2%;
+
   }
 
   @include respond(phone){
     // grid-template-columns:6vw repeat(4,1fr) 6vw ;
-    grid-template-rows:  12% 17% 1rem 26% 38% 16.2%;
+    grid-template-rows:  12% 20% 1rem 30% 42% 16.2%;
   }
 
   @media (max-width:460px){
-    grid-template-rows:  12% 18% 1rem 26% 32% 16.2%;
-    grid-row-gap: 2vh;
+    grid-template-rows:  14% 22% 1rem 30% 38% 16.2%;
+    grid-row-gap: 1vh;
   }
 
   @media (max-width:400px){
-    grid-template-rows: 11% 18% 1rem 26% 36% 12%;
-    grid-row-gap: 2vh;
+    grid-template-rows: 12% 24% 1rem 30% 42% 12%;
+    grid-row-gap: 1vh;
   }
 
   
