@@ -19,17 +19,21 @@ function Hamburger() {
       </label>
       <aside className={styles.sidebar}>
       <nav className={styles.nav}  onclick="showMessage()" onmouseover="showTooltip()" onmouseout="hideTooltip()">
-      <Link href="/about" className={styles.link}>
-            <span className={styles.span}>01.</span>About
+      <Link href="/" className={styles.link}>
+            <span className={styles.span}>01.</span>Home
+          </Link>
+          
+          <Link href="/about" className={styles.link}>
+            <span className={styles.span}>02.</span>About
           </Link>
           
           <Link href="/project" className={styles.link}>
-            <span className={styles.span}>02.</span>Project
+            <span className={styles.span}>03.</span>Project
             
           </Link>
-          <Link href="/github" className={styles.link}>
-            <span className={styles.span}>03.</span>Experience
-          </Link>
+          {/* <Link href="/github" className={styles.link}>
+            <span className={styles.span}>04.</span>Experience
+          </Link> */}
           
           <Link href="/contact" className={styles.link}>
             <span className={styles.span}>04.</span>Contact
