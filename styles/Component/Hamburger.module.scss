@@ -37,7 +37,7 @@ $x-width: calc($hamburger-height * 1.41421356237);
       content: "";
       width: $bar-width;
       height: $bar-height;
-      background-color: #7cf1e2;
+      background-color: $color-secondary-light;
       border-radius: 999rem;
 
       transform-origin: left center;
@@ -94,8 +94,8 @@ $x-width: calc($hamburger-height * 1.41421356237);
 
     padding: 1rem 2rem;
     padding-top: calc($hamburger-height + $hamburger-margin + 1rem);
-    background-color: #0c2240;
-    color: $background;
+    background-color: $color-primary-light;
+    // color: $background;
     width: 55vw;
     min-height: 100vh;
 
