@@ -8,7 +8,7 @@ function About() {
       <div className={styles.about}>
         {/* tittle */}
         <div className={styles.title}>
-          <span className={styles.title__count}>01.</span>
+          <span className={styles.title__count}>02.</span>
           <h2 className={styles.title__name}>About Me</h2>
           <div className={styles.title__line}>
           <hr style={{ borderWidth: '.1px', borderColor: '#8892B0' }} />
