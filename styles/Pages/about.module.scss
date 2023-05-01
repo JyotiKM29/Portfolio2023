@@ -217,7 +217,7 @@
     
   
 
-    @media (max-width: 770px) {
+    @media (max-width: 800px) {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -237,7 +237,10 @@
     padding: 5% 10%;
   }
 
-  @include respond(tab-port) {
-    padding: 3rem;
+  // @include respond(tab-port) {
+  //   padding: 3rem;
+  // }
+  @media(max-width:700px){
+    margin-bottom: 10rem;
   }
 }
