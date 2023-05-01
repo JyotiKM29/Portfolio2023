@@ -66,28 +66,28 @@
   @media (max-width:720px){
     display:grid;
    
-    grid-template-rows:  14% 16% 1rem 24% 42% 16.2%;
+    grid-template-rows:  14% 16% 1rem 24% 40% 16.2%;
     grid-row-gap: 1vh;
   }
 
   @media (max-width:700px){
     grid-template-columns:2rem repeat(4,1fr) 2rem ;
-    grid-template-rows:  14% 19% 1rem 24% 46% 16.2%;
+    grid-template-rows:  14% 19% 1rem 24% 40% 16.2%;
 
   }
 
   @include respond(phone){
     // grid-template-columns:6vw repeat(4,1fr) 6vw ;
-    grid-template-rows:  12% 20% 1rem 30% 42% 16.2%;
+    grid-template-rows:  12% 20% 1rem 30%  36% 16.2%;
   }
 
   @media (max-width:460px){
-    grid-template-rows:  14% 22% 1rem 30% 38% 16.2%;
+    grid-template-rows:  14% 22% 1rem 30% 34% 16.2%;
     grid-row-gap: 1vh;
   }
 
   @media (max-width:400px){
-    grid-template-rows: 12% 24% 1rem 30% 42% 12%;
+    grid-template-rows: 12% 24% 1rem 30% 38% 12%;
     grid-row-gap: 1vh;
   }
 

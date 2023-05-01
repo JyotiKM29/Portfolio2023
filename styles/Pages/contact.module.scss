@@ -74,7 +74,12 @@
     
         .p {
           font-family: $code-font-style;
-          // text-align: center;
+          
+        }
+
+        @media(max-width: 700px){
+          position: absolute;
+          bottom:8rem;
         }
       }
   }

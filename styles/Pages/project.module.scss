@@ -488,6 +488,11 @@ margin: 0;
     }
   }
 
+  .linkheading{
+    text-decoration: none;
+  }
+ 
+
   @include respond(tab-port) {
     
     padding-left:0%;
