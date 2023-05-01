@@ -15,7 +15,15 @@ $x-width: calc($hamburger-height * 1.41421356237);
 
 .navbar {
   // float: right;
- 
+//   .blur{
+//     position: absolute;
+//   // top:-10rem;
+// background-color: red;
+//   // background-color:  rgba($color-primary ,.9);
+//   // filter: blur(2px);
+//   height: 100vh;
+//   width: 100vw;
+//   }
 
   .hamburgerMenu {
     display: flex;
@@ -92,6 +100,8 @@ $x-width: calc($hamburger-height * 1.41421356237);
     top: 0;
     right: 0;
 
+    
+
     padding: 1rem 2rem;
     padding-top: calc($hamburger-height + $hamburger-margin + 1rem);
     background-color: $color-primary-light;
@@ -105,7 +115,7 @@ $x-width: calc($hamburger-height * 1.41421356237);
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-      .link {
+      &__link {
         // display:none;
         padding: 0em 1em;
         text-decoration: none;
@@ -137,8 +147,20 @@ $x-width: calc($hamburger-height * 1.41421356237);
     }
   }
 
-  .hamburgerMenu:has(.input:checked) + .sidebar {
+  .blur{
+    // transition: translate $animation-timing;
+    translate: -200%;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+
+    height: 100vh;
+    background-color: aliceblue;
+  }
+
+  .hamburgerMenu:has(.input:checked) + .sidebar  {
     translate: 0;
+   
   }
 
   @media (min-width: 700px) {
