@@ -42,6 +42,9 @@ function App() {
       <div className={styles.contact} >
         <Contact />
       </div>
+      <div className={styles.gap} >
+        
+      </div>
 
     </div>
     </main>
