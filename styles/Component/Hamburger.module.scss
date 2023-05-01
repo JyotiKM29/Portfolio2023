@@ -36,7 +36,7 @@ $x-width: calc($hamburger-height * 1.41421356237);
     position: fixed;
     top: $hamburger-margin;
     right: 2rem;
-    z-index: 99999999999999;
+    z-index: 99999999;
     cursor: pointer;
 
     &::before,
@@ -160,6 +160,7 @@ $x-width: calc($hamburger-height * 1.41421356237);
 
   .hamburgerMenu:has(.input:checked) + .sidebar  {
     translate: 0;
+    z-index: 999999;
    
   }
 
