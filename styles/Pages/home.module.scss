@@ -78,22 +78,22 @@
 
   @media (max-width:700px){
     grid-template-columns:2rem repeat(4,1fr) 2rem ;
-    grid-template-rows:  14% 19% 1rem 24% 40% 16.2% 1%;
+    grid-template-rows:  10% 17% 1rem 22% 40% 12.2% 1%;
 
   }
 
   @include respond(phone){
     // grid-template-columns:6vw repeat(4,1fr) 6vw ;
-    grid-template-rows:  12% 20% 1rem 30%  36% 16.2% 1.2%;
+    grid-template-rows:  10% 18% 1rem 28%  36% 12.2% 1.2%;
   }
 
   @media (max-width:460px){
-    grid-template-rows:  14% 22% 1rem 30% 34% 16.2% 1.2%;
+    grid-template-rows:  11% 20% 1rem 28% 32% 12.2% 1.2%;
     grid-row-gap: 1vh;
   }
 
   @media (max-width:400px){
-    grid-template-rows: 12% 24% 1rem 30% 38% 12% 1.2%;
+    grid-template-rows: 10% 20% 1rem 28% 36% 12% 1.2%;
     grid-row-gap: 1vh;
   }
 

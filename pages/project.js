@@ -18,7 +18,7 @@ function Project() {
         <section className={styles.project__1}>
           <div  className={styles.photo}>
             <div className={styles.tint}>
-              <Link href="https://fit-club-jyoti.netlify.app/" target="_blank">
+              <Link href="https://fitness-club-jyoti.vercel.app/" target="_blank">
                 <Image
                   className={styles.img}
                   src="/project2.png"
@@ -30,7 +30,7 @@ function Project() {
           </div>
           <div className={styles.content}>
             <h4 className={styles.content__sup}>Featured Project</h4>
-            <Link href="https://fit-club-jyoti.netlify.app/" target="_blank" className={styles.linkheading}>
+            <Link href="https://fitness-club-jyoti.vercel.app/" target="_blank" className={styles.linkheading}>
             <h2 className={styles.content__heading}>The FitClub</h2>
             </Link>
            
@@ -44,7 +44,7 @@ function Project() {
             </div>
             <h3 className={styles.content__techstack}>React Firebase CSS</h3>
             <div className={styles.content__links}>
-              <Link href="https://github.com/JyotiKM29/Gym-website">
+              <Link href="https://fitness-club-jyoti.vercel.app/">
                 {" "}
                 <Image
                   className={styles.link}
@@ -53,7 +53,7 @@ function Project() {
                   height={"25"}
                 ></Image>
               </Link>
-              <Link href="https://fit-club-jyoti.netlify.app/">
+              <Link href="https://fitness-club-jyoti.vercel.app/">
                 {" "}
                 <Image
                   className={styles.link}
