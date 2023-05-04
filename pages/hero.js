@@ -20,7 +20,7 @@ function Hero() {
           brand stand out and attract your target audience.
         </p>
         <Link href="https://jyoti-km.vercel.app/">
-        <button  className={styles.btn}>Check out my project</button>
+        <button  className={styles.btn}>Check out my portfolio</button>
         </Link>
       </div>
     
