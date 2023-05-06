@@ -20,7 +20,11 @@
   }
   &__heading2{
     @include heading2;
+    
   }
+
+ 
+
   &__sub{
     width:65%;
     @include para;

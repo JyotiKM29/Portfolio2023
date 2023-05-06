@@ -14,10 +14,10 @@ import Head from "next/head";
 function App() {
   return (
     <>
-    {/* <Head>
+    <Head>
       <title>Jyoti Km</title>
        <link rel="icon"  href="/jyoti.ico" />
-    </Head> */}
+    </Head>
     <main>
     <div className={styles.container}>
       {/* <div className={styles.navbar} >

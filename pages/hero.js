@@ -12,6 +12,8 @@ function Hero() {
       <div className={styles.hero}>
         <h1 className={styles.hero__sup}>Hi, my name is</h1>
         <h2 className={styles.hero__heading1}>Jyoti Kumari.</h2>
+        {/* <h3 className={styles.typing__animation}>I build things for the web.</h3> */}
+
         <h3 className={styles.hero__heading2}>I build things for the web.</h3>
         <p className={styles.hero__sub}>
           I’m a software engineer , I m Specialise in <span style={{color:"#7cf1e2"}}>Fronted web developer. </span> My
