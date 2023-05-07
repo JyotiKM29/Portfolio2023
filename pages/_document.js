@@ -3,11 +3,11 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
-      {/* <Head>
+      {/* <Head /> */}
+      <Head>
         <title>Jyoti Km</title>
         <link rel="icon" href="/jyoti.ico" />
-      </Head> */}
+      </Head>
 
       <body>
         <Main />
