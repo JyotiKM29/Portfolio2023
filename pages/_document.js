@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       {/* <Head /> */}
       <Head>
-        <title>Jyoti Km</title>
+        <title>Jyoti Kumari</title>
         <link rel="icon" href="/jyoti.ico" />
       </Head>
 
