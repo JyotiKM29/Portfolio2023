@@ -7,11 +7,30 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <table >
 
 <tr>
-<img src="./public/demo%20screenshots/desktop/1.png" width=50% /><img src="./public/demo%20screenshots/desktop/2.png" width=50% />
+ <td>
+<img src="./public/demo%20screenshots/desktop/1.png" width=100% />
+ </td>
 
+ <td>
+  <img src="./public/demo%20screenshots/desktop/3.png" width=100% />
+ </td>
 <tr/>
-<img src="./public/demo%20screenshots/desktop/3.png" width=50% /><img src="./public/demo%20screenshots/desktop/4.png"  width=50% />
-<img src="./public/demo%20screenshots/desktop/5.png" width=100% />
+ 
+ <tr>
+ <td>
+<img src="./public/demo%20screenshots/desktop/4.png" width=100% />
+ </td>
+
+ <td>
+  <img src="./public/demo%20screenshots/desktop/5.png" width=100% />
+ </td>
+<tr/>
+ 
+<tr>
+
+<img src="./public/demo%20screenshots/desktop/2.png" width=100% />
+
+ </tr>
 
 </table>
 
