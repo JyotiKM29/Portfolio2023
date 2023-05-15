@@ -1,18 +1,96 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Project Screenshots
 
-First, run the development server:
+---  
+<th>💻 In Desktop & tablet </th>  
+<table >
+
+<tr>
+ <td>
+<img src="./public/demo%20screenshots/desktop/1.png" width=100% />
+ </td>
+
+ <td>
+  <img src="./public/demo%20screenshots/desktop/3.png" width=100% />
+ </td>
+<tr/>
+ 
+ <tr>
+ <td>
+<img src="./public/demo%20screenshots/desktop/4.png" width=100% />
+ </td>
+
+ <td>
+  <img src="./public/demo%20screenshots/desktop/5.png" width=100% />
+ </td>
+<tr/>
+ 
+<tr>
+
+<img src="./public/demo%20screenshots/desktop/2.png" width=100% />
+
+ </tr>
+
+</table>
+
+<th>📱 In phone </th>
+
+<table width=20% >
+
+<img src="./public/demo%20screenshots/phone/1.png" width=20% /><img src="./public/demo%20screenshots/phone/2.png" width=20% /><img src="./public/demo%20screenshots/phone/3.png" width=20%/><img src="./public/demo%20screenshots/phone/4.png"  width=20% /><img src="./public/demo%20screenshots/phone/5.png" width=20% />
+
+</table>
+
+
+
+## How to Set Up locally ⚙️
+
+---
+
+Clone the app using git
+
+```bash
+git clone https://github.com/JyotiKM29/Portfolio2023.git
+```
+
+change directory to Portfolio2023
+
+```bash
+cd Portfolio2023
+```
+
+Install all the required packages
+
+```bash
+ git install
+```
+
+## Run locally
+
+---
+
+🠮 Using npm
 
 ```bash
 npm run dev
-# or
+```
+
+🠮 Using Yarn
+
+```bash
 yarn dev
-# or
+```
+
+🠮 Using pnpm
+
+```bash
 pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+If you're not able to take preview in browser then check the steps again.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
@@ -23,6 +101,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
+
+---
 
 To learn more about Next.js, take a look at the following resources:
 
