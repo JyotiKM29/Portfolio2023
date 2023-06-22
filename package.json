@@ -11,6 +11,7 @@
   "dependencies": {
     "@next/font": "13.3.0",
     "classnames": "^2.3.2",
+    "dotenv": "^16.3.1",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "mongoose": "^7.3.1",
