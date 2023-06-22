@@ -1,7 +1,29 @@
 import styles from '../styles/Pages/contact.module.scss';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 function Contact(){
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+      const fetchCount = async () => {
+        try {
+          const response = await fetch('/api/counter');
+          if (response.ok) {
+            const data = await response.json();
+            setCount(data.count);
+          } else {
+            console.log('Error fetching visitor count:', response.status);
+          }
+        } catch (error) {
+          console.error('Error fetching visitor count:', error);
+        }
+      };
+  
+      fetchCount();
+    }, []);
+
+
     return(
         <>
         <div className={styles.contactpage}>
@@ -18,6 +40,7 @@ function Contact(){
         <div className={styles.copyright}>
         <p className={styles.p}>designed & built with ❤️ by Jyoti KM</p>
         <p className={styles.p}>copyright@2023</p>
+        <p className={styles.p}>Total vistors: {count} </p>
         </div>
         </div>
  

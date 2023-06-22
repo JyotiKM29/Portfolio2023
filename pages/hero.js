@@ -1,4 +1,6 @@
 
+
+import incrementVisitorsCount from './api/counter';
 import styles from '../styles/Pages/hero.module.scss'
 import Link from 'next/link';
 
@@ -7,6 +9,7 @@ import Link from 'next/link';
 function Hero() {
   return (
     <>
+    
       <div className={styles.sections} >
      
       <div className={styles.hero}>

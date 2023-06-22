@@ -1,4 +1,4 @@
-import '@/styles/globals.css';
+import '@/styles/globals.css';            
 import '@/styles/styles.scss';
 import Navbar from './navbar';
 import Hamburger from './Hamburger';
