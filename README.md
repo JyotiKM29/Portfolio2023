@@ -17,7 +17,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 <th>📱 In phone </th>
 
-<table width=20% >
+<table>
 
 <img src="./public/demo%20screenshots/phone/1.png" width=20% /><img src="./public/demo%20screenshots/phone/2.png" width=20% /><img src="./public/demo%20screenshots/phone/3.png" width=20%/><img src="./public/demo%20screenshots/phone/4.png"  width=20% /><img src="./public/demo%20screenshots/phone/5.png" width=20% />
 
