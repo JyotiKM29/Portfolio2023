@@ -14,6 +14,8 @@ export default function App({ Component, pageProps }) {
       <main>
         <Component {...pageProps} />
       </main>
+      {/* MONGODB_URI=mongodb+srv://khatripriya427:4dNvBr4bbiEs9cWk@cluster0.unbyigo.mongodb.net/?retryWrites=true&w=majority
+ */}
     </div>
     </ThemeProvider>
   )
