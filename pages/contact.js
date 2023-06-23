@@ -30,7 +30,7 @@ function Contact(){
         <div className={styles.contact}>
         <h1 className={styles.contact__sup}>04.  What’s Next?</h1>
         <h2 className={styles.contact__heading}>Get In Touch</h2>
-        <p className={styles.contact__sub}>Although I’m not currently looking for any new opportunities, my inbox is always open. 
+        <p className={styles.contact__sub}>Although I’m currently looking for any new opportunities, my inbox is always open. 
         Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
         <Link href="https://www.linkedin.com/in/jyotikmr/">
         <button className={styles.contact__btn}>Say hello</button>
@@ -39,8 +39,9 @@ function Contact(){
 
         <div className={styles.copyright}>
         <p className={styles.p}>designed & built with ❤️ by Jyoti KM</p>
-        <p className={styles.p}>copyright@2023</p>
         <p className={styles.p}>Total vistors: {count} </p>
+        <p className={styles.p}>copyright@2023</p>
+        
         </div>
         </div>
  
