@@ -11,4 +11,5 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  favicon:'public/favicon.ico',
 };

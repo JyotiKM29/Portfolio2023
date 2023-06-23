@@ -16,7 +16,7 @@ function App() {
     <>
     <Head>
       <title>Jyoti km</title>
-       <link rel="icon" href="/favicon.ico" />
+       <link rel="icon" href="favicon.ico" />
     </Head>
     <main>
     <div className={styles.container}>

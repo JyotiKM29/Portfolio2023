@@ -24,6 +24,7 @@ function Project() {
                   src="/project2.png"
                   width={630}
                   height={400}
+                  alt="okk"
                 ></Image>
               </Link>
             </div>
