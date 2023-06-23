@@ -8,7 +8,7 @@ function Contact(){
     useEffect(() => {
       const fetchCount = async () => {
         try {
-          const response = await fetch('https://jyoti-km.vercel.app/api/counter');
+          const response = await fetch('/api/counter');
           if (response.ok) {
             const data = await response.json();
             setCount(data.count);
