@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Navbar from "../pages/navbar"
 
 function Layout({ children }) {
+  
     return (
       <div>
         <header>
