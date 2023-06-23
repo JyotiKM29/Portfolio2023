@@ -105,6 +105,8 @@
     font-family: $code-font-style;
     rotate: 90deg;
     margin-bottom: 14vh;
+  }:hover{
+    scale: 1.1;
   }
   .vertical {
     border-left: 0.1rem solid $color-neutral;

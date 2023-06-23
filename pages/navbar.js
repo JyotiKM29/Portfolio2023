@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import CopyOnClick from "../components/CopyOnClick";
 import { useRouter } from "next/router";
 
 // import styles from "@/styles/component/navbar.module.scss";
@@ -106,7 +106,9 @@ function Navbar() {
       </div>
 
       <div className={styles.sidebar2}>
-        <div className={styles.email}>Jyotikumari4442@gmail.com</div>
+        <CopyOnClick text="jyotikumari4442@gmail.com">
+          <div className={styles.email}>jyotikumari4442@gmail.com</div>
+        </CopyOnClick>
         <div className={styles.vertical}></div>
       </div>
     </>
