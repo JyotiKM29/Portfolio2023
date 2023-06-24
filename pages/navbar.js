@@ -9,7 +9,7 @@ import styles from "../styles/Component/navbar.module.scss";
 function Navbar() {
   const router = useRouter();
   const downloadResume = () => {
-    router.push("/Jyoti KM.pdf");
+    router.push("/Jyoti.pdf");
   };
 
   return (
