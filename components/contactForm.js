@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Component/contactform.module.scss';
 import { useRouter } from 'next/router';
-
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -10,46 +9,33 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
 
-  // const router = useRouter();
-  // useEffect(() => {
-  //   if (alertMessage) {
-  //     const timer = setTimeout(() => {
-  //       setAlertMessage('');
-  //       router.push('/');
-  //     }, 3000);
-
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, [alertMessage, router]);
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    sendEmail(name,email,subject,message);
 
-    const response = await fetch('/api/useEmailSender', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, email, subject, message }),
-    });
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
 
-    const data = await response.json();
-    console.log(data);
+      const data = await response.json();
 
-    if (response.ok) {
-      console.log('Contact form submitted successfully!');
-      setAlertMessage('Thanks for your message!');
-      // Reset the form fields
-      setName('');
-      setEmail('');
-      setSubject('');
-      setMessage('');
-      router.push('/');
-    } else {
-      console.log('An error occurred while submitting the contact form.');
-      setAlertMessage("an error occured, please try again later");
+      if (response.ok) {
+        setAlertMessage('Thanks for your message!');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      } else {
+        console.log('An error occurred while submitting the contact form.');
+        setAlertMessage('An error occurred while sending the email. Please try again later.');
+      }
+    } catch (error) {
+      console.error('An error occurred while sending the email:', error);
+      setAlertMessage('An error occurred while sending the email. Please try again later.');
     }
   };
 
