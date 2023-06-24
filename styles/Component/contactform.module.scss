@@ -1,0 +1,62 @@
+@import "../Base/variable.module";
+@import "../Base/mixins.module";
+
+
+.form{
+    // background-color: red;
+    width: 95%;
+    height: 100%;
+    padding: 2% 4%;
+    padding-top: 0%;
+    padding-left: 0%;
+    color:$color-neutral;
+    font-size:$default-font-size;
+    font-family:$default-font-style ;
+
+    &__group{
+        // background-color: aqua;
+        width: 100%;
+        margin: 1%;
+        padding: 1%;
+        margin-top: 0%;
+        padding-top: 0%;
+        font-size: 2rem;
+        font-family: inherit;
+    }
+
+    &__label{
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem .5rem;
+    }
+    
+    &__input , &__textarea{
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1rem;
+        background-color: transparent;
+        border: 2px solid $color-secondary;
+        border-radius: .7rem;
+        // border:none;
+    }
+
+    &__textarea{
+        height:10vh;
+    }
+
+    &__button{
+        @include button;
+        // border: 2px solid $color-neutral;
+        // color: $color-neutral;
+        margin-left: 1rem;
+
+      &:hover,
+      :active,
+      :focus {
+        background-color: rgba($color-secondary, 0.1);
+      }
+    }
+}
