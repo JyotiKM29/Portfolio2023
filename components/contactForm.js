@@ -8,9 +8,11 @@ const ContactForm = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     try {
       const response = await fetch('/api/send-email', {
@@ -20,7 +22,6 @@ const ContactForm = () => {
         },
         body: JSON.stringify({ name, email, subject, message }),
       });
-
       const data = await response.json();
 
       if (response.ok) {
@@ -37,6 +38,8 @@ const ContactForm = () => {
       console.error('An error occurred while sending the email:', error);
       setAlertMessage('An error occurred while sending the email. Please try again later.');
     }
+
+    setIsSending(false);
   };
 
   return (
@@ -81,7 +84,9 @@ const ContactForm = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
       </div>
-      <button type="submit" className={styles.form__button} >Submit</button>
+      <button type="submit" id='Button' className={styles.form__button} disabled={isSending}>
+      {isSending ? 'Sending...' : 'Submit'}
+      </button>
     </form>
      {alertMessage && <p style={{ color: 'blue' }}>{alertMessage}</p>}
      </div>
