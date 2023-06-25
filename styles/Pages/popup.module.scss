@@ -15,7 +15,7 @@
      
      display: flex;
      align-items: center;
-    justify-content: center;
+     justify-content: center;
 
         
 
@@ -51,7 +51,8 @@
 
      &__close{
         
-       text-align: right;
+        // text-align: left;
+        // margin-left: auto;
         color:$color-secondary;
         font-size: 3rem;
         text-decoration: none;
