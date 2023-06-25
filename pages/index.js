@@ -17,6 +17,7 @@ function App() {
     <Head>
       <title>Jyoti km</title>
        <link rel="icon" href="favicon.ico" />
+       <meta name="google-site-verification" content="fmimo4Ag30bpXyBeW7RlqkGYYBMdeS2H0yDI6KvywlE" />
     </Head>
     <main>
     <div className={styles.container}>
