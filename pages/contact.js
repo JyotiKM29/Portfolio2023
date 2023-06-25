@@ -37,15 +37,15 @@ function Contact(){
         </Link>
         
 
+        
+        </div>
+ 
         <div className={styles.copyright}>
         <p className={styles.p}>designed & built with ❤️ by Jyoti KM</p>
         <p className={styles.p}>Total vistors: {count} </p>
         <p className={styles.p}>copyright@2023</p>
         
         </div>
-        </div>
- 
-        
 
         </div>
         </>
