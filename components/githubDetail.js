@@ -9,6 +9,16 @@ const data = [
     'link2':"https://github.com/JyotiKM29/PORTO",
 
 },
+
+{'tittle':" Retro Design",
+    'des':" Practice UI design in Retro Form ",
+    'tech1':"Html",
+    'tech2':"CSS",
+    'tech3':"javaScript",
+    'link1' :"https://github.com/JyotiKM29/Retro-Design",
+    'link2':"https://github.com/JyotiKM29/Retro-Design",
+
+},
     
     {'tittle':"Take a break",
     'des':"This website which use help taking break while using laptop or desktop for longtime",
