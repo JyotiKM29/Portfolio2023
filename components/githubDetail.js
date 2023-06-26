@@ -29,6 +29,16 @@ const data = [
     'link2':"https://github.com/JyotiKM29/Major-Project",
 },
 
+{'tittle':" Wheather App",
+    'des':"This website will Wheather of city you entered ",
+    'tech1':"Html5",
+    'tech2':"CSS3",
+    'tech3':"JavaScript",
+    'link1' :"https://github.com/JyotiKM29/Wheather-App-javascript",
+    'link2':"https://github.com/JyotiKM29/Wheather-App-javascript",
+},
+
+
 {'tittle':"Whats App portfolio",
     'des':"This website which can send you my resume on basis of questions in chat.",
     'tech1':"Html5",
