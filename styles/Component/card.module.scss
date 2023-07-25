@@ -1,0 +1,55 @@
+@import '../Base/variable.module';
+@import '../Base/mixins.module';
+
+
+.card{
+    display: flex;
+    color: $color-secondary;
+    background-color: $color-primary;
+    padding: 3%;
+    border-radius: 3rem;
+    
+    &__left{
+        width: 50%;
+        h1{
+            padding: 0;
+            margin: 0;
+          font-size:clamp(3.5vw , 3.5vh , 4.5vh);
+          line-height:clamp(3.7vw , 3.7vh , 4.7vh);
+          font-weight: 900;
+        }
+        h2{
+            padding: 0;
+            margin: 0;
+           font-size:clamp(2vw , 2vh , 3vh);
+           line-height:clamp(2.2vw , 2.2vh , 3.2vh);
+           letter-spacing: -1.12px;
+           font-weight: 700;
+        }
+        ul{
+            
+            padding: 0;
+            li{
+                list-style: none;
+                background-color: $color-primary-light;
+                margin: .4em 0;
+                padding: .115em 1.6em;
+                border-radius: 999rem;
+
+                h3{
+                   font-weight: 400;
+                }
+            }
+        }
+
+        &_button{
+            @include button;
+        }
+      
+    }
+
+    &__right{
+
+    }
+
+}
