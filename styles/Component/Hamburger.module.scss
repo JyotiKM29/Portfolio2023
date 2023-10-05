@@ -1,0 +1,170 @@
+@import "../Base/variable.module";
+@import "../Base/mixins.module";
+
+$bar-width: 4rem;
+$bar-height: 0.4rem;
+$hamburger-gap: 0.6rem;
+$hamburger-margin: 4rem;
+$hamburger-height: calc(($bar-height) * 3 + ($hamburger-gap * 2));
+
+$foreground: #333;
+$background: white;
+
+$animation-timing: 200ms ease-in-out;
+$x-width: calc($hamburger-height * 1.41421356237);
+
+.navbar {
+  // float: right;
+//   .blur{
+//     position: absolute;
+//   // top:-10rem;
+// background-color: red;
+//   // background-color:  rgba($color-primary ,.9);
+//   // filter: blur(2px);
+//   height: 100vh;
+//   width: 100vw;
+//   }
+
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    gap: $hamburger-gap;
+    // background-color: red;
+    width: max-content;
+
+    // position: relative;
+    position: fixed;
+    top: $hamburger-margin;
+    right: 2rem;
+    z-index: 99999999;
+    cursor: pointer;
+
+    &::before,
+    &::after,
+    & .input {
+      content: "";
+      width: $bar-width;
+      height: $bar-height;
+      background-color: $color-secondary-light;
+      border-radius: 999rem;
+
+      transform-origin: left center;
+      transition: opacity $animation-timing, width $animation-timing,
+        rotate $animation-timing, translate $animation-timing,
+        background-color $animation-timing;
+    }
+
+    & .input {
+      appearance: none;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      pointer-events: none;
+    }
+
+    &:has(.input:checked)::before {
+      rotate: 45deg;
+      width: $x-width;
+      translate: 0 calc($bar-height / -2);
+    }
+
+    &:has(.input:checked)::after {
+      rotate: -45deg;
+      width: $x-width;
+      translate: 0 calc($bar-height / 2);
+    }
+
+    & .input:checked {
+      // background-color: red;
+      opacity: 0;
+      width: 0;
+    }
+
+    &:has(.input::checked) {
+      $foreground: white;
+      $background: #333;
+    }
+
+    &:has(.input:focus-visible)::before,
+    &:has(.input:focus-visible)::after,
+    & .input:focus-visible {
+      border: 0.1rem solid $background;
+      box-shadow: 0 0 0 0.1rem $foreground;
+    }
+  }
+
+  .sidebar {
+    transition: translate $animation-timing;
+    translate: -200%;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    
+
+    padding: 1rem 2rem;
+    padding-top: calc($hamburger-height + $hamburger-margin + 1rem);
+    background-color: $color-primary-light;
+    // color: $background;
+    width: 55vw;
+    min-height: 100vh;
+
+    .nav {
+      padding: 20% 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      &__link {
+        // display:none;
+        padding: 0em 1em;
+        text-decoration: none;
+
+        color: $color-neutral;
+        font-weight: light;
+        // border: 1px solid lightgreen;
+
+        &:hover {
+          color: $color-secondary-light;
+        }
+      }
+
+      .span {
+        margin-right: 0.5rem;
+        font-family: $code-font-style !important;
+        color: $color-secondary-light;
+      }
+
+      .btn {
+        @include button;
+
+        &:hover,
+        :active,
+        :focus {
+          background-color: rgba($color-secondary, 0.1);
+        }
+      }
+    }
+  }
+
+  .blur{
+    // transition: translate $animation-timing;
+    translate: -200%;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+
+    height: 100vh;
+    background-color: aliceblue;
+  }
+
+  .hamburgerMenu:has(.input:checked) + .sidebar  {
+    translate: 0;
+    z-index: 999999;
+   
+  }
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+}

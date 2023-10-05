@@ -3,22 +3,6 @@
   --color-secodary-light:#7cf1e2;
 }
 
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
-  background-color:#F8F2FC;
-}
-
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;

@@ -1,0 +1,96 @@
+@import "../Base/variable.module";
+@import "../Base/mixins.module";
+
+.contactpage {
+  position: relative;
+  // z-index: -10;
+  height: 84vh;
+  padding: 0% 10%;
+
+//   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  // border: 1px solid lightblue;
+
+  .contact {
+    height: 80%;
+    padding: 0%;
+    // width: 100%;
+    // padding: 20% 10%;
+    // background-color: green;
+    // border: 1px solid rgb(20, 190, 74);
+    // @include absCenter;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__sup {
+      @include subHeading;
+      margin: 1em 0;
+    }
+    &__heading {
+      @include heading1;
+    }
+    &__sub {
+      // border: 1px solid white;
+      width: 60%;
+      // text-align: center !important;
+      @include para;
+      margin: 2em 0;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
+    &__btn {
+      @include button;
+      padding: 1.6em;
+      margin: 1em 0;
+
+      &:hover,
+      :active,
+      :focus {
+        background-color: rgba($color-secondary, 0.1);
+      }
+      @include respond(phone){
+        padding: 1em;
+      margin: 0 0;
+      width: 100%;
+      }
+    }
+
+    
+  }
+
+  .copyright {
+    width: 100%;
+    // background-color: red;
+
+    position: relative;
+    bottom: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .p {
+      font-family: $code-font-style;
+      text-align: center;
+    }
+
+   
+  }
+
+  @media(max-width:900px){
+    padding-top: 0%;
+    padding-bottom: 14%;
+  }
+
+}
