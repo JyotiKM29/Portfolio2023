@@ -30,7 +30,7 @@ function About() {
 
             <p className={styles.p}>
               I can help you create a website that not only looks great but also
-              <span style={{color:"#7cf1e2"}}>drives traffic and boosts conversions </span>. Let me put my skills to
+              <span style={{color:"#7cf1e2"}}> drives traffic and boosts conversions </span>. Let me put my skills to
               work and help you take your brand to the next level with a
               visually stunning and user-friendly website.
             </p>

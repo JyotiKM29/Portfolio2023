@@ -20,7 +20,7 @@ function Hero() {
         <h3 className={styles.hero__heading2}>I build things for the web.</h3>
         <p className={styles.hero__sub}>
           I’m a software engineer , I m Specialise in <span style={{color:"#7cf1e2"}}>Frontend web developer. </span> My
-          expertise in <span style={{color:"#7cf1e2"}}>Figma , HTML, CSS, JS, React, Next.js </span> and MongoDB, can
+          expertise in <span style={{color:"#7cf1e2"}}>Figma , HTML, CSS, SCSS, JS, React,Redux, Next.js </span> and MongoDB, can
           help you create a stunning and functional website that will make your
           brand stand out and attract your target audience.
         </p>
