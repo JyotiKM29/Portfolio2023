@@ -30,9 +30,9 @@ function Contact(){
         <div className={styles.contact}>
         <h1 className={styles.contact__sup}>04.  What’s Next?</h1>
         <h2 className={styles.contact__heading}>Get In Touch</h2>
-        <p className={styles.contact__sub}> I'm actively seeking new opportunities. Let's create something 
+        <p className={styles.contact__sub}> I&apos;m actively seeking new opportunities. Let&apos;s create something 
         amazing together! Feel free to reach out with any questions or just to say hi. 
-        I'll be sure to get back to you!</p>
+        I&apos;ll be sure to get back to you!</p>
         <Link href="/popup">
         <button className={styles.contact__btn}>Say hello</button>
         </Link>

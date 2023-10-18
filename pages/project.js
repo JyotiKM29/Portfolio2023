@@ -52,6 +52,7 @@ function Project() {
                   src="/github2.svg"
                   width={"25"}
                   height={"25"}
+                  alt=""
                 ></Image>
               </Link>
               <Link href="https://fitness-club-jyoti.vercel.app/">
@@ -61,6 +62,7 @@ function Project() {
                   src="/link.svg"
                   width={"25"}
                   height={"25"}
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -96,6 +98,7 @@ function Project() {
                   src="/github2.svg"
                   width={"25"}
                   height={"25"}
+                  alt=""
                 ></Image>
               </Link>
               <Link href="https://glowing-rolypoly-5e3772.netlify.app/">
@@ -104,6 +107,7 @@ function Project() {
                   src="/link.svg"
                   width={"25"}
                   height={"25"}
+                  alt=""
                 ></Image>
               </Link>
             </div>
@@ -116,6 +120,7 @@ function Project() {
                   src="/project4.png"
                   width={630}
                   height={400}
+                  alt=""
                 ></Image>
              </Link>
             </div>
@@ -133,6 +138,7 @@ function Project() {
                   src="/project1.png"
                   width={630}
                   height={400}
+                  alt=""
                 ></Image>
            </Link>
                
@@ -167,6 +173,7 @@ function Project() {
                   src="/github2.svg"
                   width={"25"}
                   height={"25"}
+                  alt=""
                 ></Image>
               </Link>
               <Link href="https://town-of-books.vercel.app/">
@@ -176,6 +183,7 @@ function Project() {
                   src="/link.svg"
                   width={"25"}
                   height={"25"}
+                  alt=""
                 ></Image>
               </Link>
             </div>
