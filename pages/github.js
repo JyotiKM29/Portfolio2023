@@ -1,6 +1,6 @@
 import styles from "../styles/Component/github.module.scss";
 import Image from "next/image";
-import data from "./githubDetail";
+import data from "../components/githubDetail";
 import Link from "next/link";
 
 function Github() {
