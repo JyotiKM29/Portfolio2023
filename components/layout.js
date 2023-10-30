@@ -1,7 +1,7 @@
 // import Contact from "@/pages/contact"
 import styles from '../styles/Pages/home.module.scss'
 import Image from 'next/image'
-import Navbar from "../pages/navbar"
+import Navbar from "./navbar"
 
 function Layout({ children }) {
   

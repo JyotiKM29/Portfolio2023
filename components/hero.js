@@ -1,6 +1,6 @@
 
 
-import incrementVisitorsCount from './api/counter';
+import incrementVisitorsCount from '../pages/api/counter';
 import styles from '../styles/Pages/hero.module.scss'
 import Link from 'next/link';
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import CopyOnClick from "../components/CopyOnClick";
+import CopyOnClick from "./CopyOnClick";
 import { useRouter } from "next/router";
 
 // import styles from "@/styles/component/navbar.module.scss";

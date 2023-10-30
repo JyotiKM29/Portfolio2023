@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 import '@/styles/styles.scss';
-import Navbar from './navbar';
-import Hamburger from './Hamburger';
+import Navbar from '../components/navbar';
+import Hamburger from '../components/Hamburger';
 
 // import Link from 'next/link';
 
