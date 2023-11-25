@@ -1,6 +1,6 @@
 import styles from "../styles/Pages/about.module.scss";
 import Image from "next/image";
-import Link from "next/link";
+
 
 function About() {
   return (
