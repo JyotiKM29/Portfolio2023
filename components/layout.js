@@ -35,7 +35,7 @@ function Layout({ children }) {
       
       <div className={styles.sidebar2}>
       <div className={styles.email}>
-        Jyotikumari4442@gmail.com
+        Jyotikm.dev@gmail.com
       </div>
       <div className={styles.vertical}></div>
       </div>

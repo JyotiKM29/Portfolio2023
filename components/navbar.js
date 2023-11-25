@@ -106,8 +106,8 @@ function Navbar() {
       </div>
 
       <div className={styles.sidebar2}>
-        <CopyOnClick text="jyotikumari4442@gmail.com">
-          <div className={styles.email}>jyotikumari4442@gmail.com</div>
+        <CopyOnClick text="jyotikm.dev@gmail.com">
+          <div className={styles.email}>jyotikm.dev@gmail.com</div>
         </CopyOnClick>
         <div className={styles.vertical}></div>
       </div>
