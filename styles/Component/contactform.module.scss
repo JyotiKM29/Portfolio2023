@@ -42,6 +42,11 @@
         border-radius: .7rem;
         // border:none;
 
+        &:focus , &:active{
+            background-color: transparent;
+            outline: none;
+        } 
+
         @media(max-width:900px){
             width:80vw;
         }
@@ -62,5 +67,11 @@
       :focus {
         background-color: rgba($color-secondary, 0.1);
       }
+    }
+
+    .error{
+        color:#d33b3b;
+        font-size:$default-font-size;
+        font-family:$default-font-style ; 
     }
 }
