@@ -20,7 +20,7 @@ function About() {
           {/* detail */}
           <div className={styles.content__detail}>
             <p className={styles.p}>
-              Hello! I'm Jyoti KM, passionate about crafting internet-based
+              Hello! I&apos;m Jyoti KM, passionate about crafting internet-based
               creations. My journey into web development began in 2017 when I
               explored animating custom headings on webpages. This interest led
               me from studying Computer Science in school to pursuing{" "}
@@ -36,7 +36,7 @@ function About() {
             </p>
 
             <p className={styles.p}>
-              Here are a few technologies I’ve been worked  recently:
+              Here are a few technologies I&apos;ve been worked  recently:
             </p>
 
             <div className={styles.cols}>
