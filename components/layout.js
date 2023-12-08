@@ -1,7 +1,7 @@
 // import Contact from "@/pages/contact"
 import styles from '../styles/Pages/home.module.scss'
 import Image from 'next/image'
-import Navbar from "../pages/navbar"
+import Navbar from "./navbar"
 
 function Layout({ children }) {
   
@@ -35,7 +35,7 @@ function Layout({ children }) {
       
       <div className={styles.sidebar2}>
       <div className={styles.email}>
-        Jyotikumari4442@gmail.com
+        Jyotikm.dev@gmail.com
       </div>
       <div className={styles.vertical}></div>
       </div>

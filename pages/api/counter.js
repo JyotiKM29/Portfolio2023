@@ -16,6 +16,7 @@ const incrementVisitorsCount = async (req, res) => {
       }
 
       visitor.count++;
+      console.log(visitor.count);
       await visitor.save();
 
       res.status(200).json({ count: visitor.count });

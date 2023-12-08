@@ -1,6 +1,6 @@
 import styles from "../styles/Component/github.module.scss";
 import Image from "next/image";
-import data from "../components/githubDetail";
+import data from "./githubDetail";
 import Link from "next/link";
 
 function Github() {
@@ -21,7 +21,7 @@ function Github() {
                 ></Image>
               </div>
               <div className={styles.upperside__icons}>
-                <Link href={item?.link1 ?? "#"}>
+                <Link href={item?.github ?? "#"}>
                   <Image
                     alt="icon"
                     className={styles.link}
@@ -30,7 +30,7 @@ function Github() {
                     height={22}
                   ></Image>
                 </Link>
-                <Link href={item?.link2 ?? "#"}>
+                <Link href={item?.link ?? "#"}>
                   <Image
                     alt="icon"
                     className={styles.link}
@@ -42,7 +42,9 @@ function Github() {
               </div>
             </div>
             <div className={styles.content}>
-              <h2 className={styles.content__tittle}>{item.tittle}</h2>
+              <Link href={item?.link ?? "#"} 
+              className={styles.content__tittle}>
+              {item.tittle}</Link>
               <p className={styles.content__des}>{item.des}</p>
               <div className={styles.content__techstack}>
                 <span className={styles.tech}>{item.tech1}</span>

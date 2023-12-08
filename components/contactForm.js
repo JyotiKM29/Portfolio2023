@@ -88,7 +88,7 @@ const ContactForm = () => {
       {isSending ? 'Sending...' : 'Submit'}
       </button>
     </form>
-     {alertMessage && <p style={{ color: 'blue' }}>{alertMessage}</p>}
+     {alertMessage && <p style={{color:'#d33b3b', fontSize:'1.6rem'}}>{alertMessage}</p>}
      </div>
     
   );
