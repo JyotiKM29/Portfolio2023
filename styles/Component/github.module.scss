@@ -4,34 +4,36 @@
 .githubpage {
   min-height: 100vh;
   width: 100%;
-  padding : 5% 15%;
-  
+  padding: 5% 15%;
+
   @media (max-width: 1200px) {
-    padding : 5% 10%;
+    padding: 5% 10%;
   }
   @media (max-width: 900px) {
-    padding : 5% 15%;
+    padding: 5% 15%;
   }
-
-  
-  
 }
 
-.headingGithub{
-    @include heading1;
-    font-size: 3.5rem;
-    
-    
+.headingGithub {
+  @include heading1;
+  font-size: 3.5rem;
 
-    width: 100%;
+  width: 100%;
+  text-align: center;
+  @media (max-width: 900px) {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  &__sub {
+    @include codestyle;
+    color: $color-secondary-light;
+    margin-top: -1rem;
     text-align: center;
-
-    &__sub {
-          @include codestyle;
-          color: $color-secondary-light;
-          margin-top: -1rem;
-          text-align: center;
-         }
+    @media (max-width: 900px) {
+      margin-top: 0;
+    }
+  }
 }
 
 .containerGithub {
@@ -45,196 +47,99 @@
 
   gap: 1.2rem;
 
-
-
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
-  grid-template-rows: repeat(5, minmax(min-content, 1fr));
+    grid-template-rows: repeat(5, minmax(min-content, 1fr));
 
-  gap: 1.2rem;
+    gap: 1.2rem;
   }
   @media (max-width: 700px) {
     grid-template-columns: repeat(1, minmax(min-content, 1fr));
-  grid-template-rows: repeat(9, minmax(26vh, 1fr));
+    grid-template-rows: repeat(9, minmax(26vh, 1fr));
 
-  gap: 1.2rem;
+    gap: 1.2rem;
   }
 
   .box {
-        position: relative;
-        background-color: $color-primary-light;
-    
-        // height: 16vw;
-        // width: 19vw;
-        border-radius: 0.6rem;
-        cursor: pointer;
-        object-fit: contain;
-    
-        padding: 2em;
-    
-        .upperside {
-          // border : 1px solid white;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-    
-          &__icons {
-            .link {
-              margin: 0.2em;
-              &:hover {
-                scale: 1.1;
-              }
-            }
-          }
-        }
+    position: relative;
+    background-color: $color-primary-light;
 
-        &:hover {
-          scale: 1.01;
-        }
-      }
+    // height: 16vw;
+    // width: 19vw;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    object-fit: contain;
 
-     
-}
+    padding: 2em;
 
-    .containerGithub{
-      margin: 1em 0;
-      &__tittle {
-        text-decoration: none;
-        font-size: 2.3rem;
-        line-height: 2.5rem;
-        font-weight: 400;
-        color: $color-neutral-light;
+    .upperside {
+      // border : 1px solid white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
 
-        &:hover {
-          color: $color-secondary-light;
-        }
-      }
-      &__des {
-        font-size: 1.5rem;
-        line-height: 1.9rem;
-        font-weight: 300;
-        margin: 0.5em 0;
-      }
-      &__techstack {
-        @include codestyle;
-        // margin:  1rem 0;
-        color: $color-neutral-dark;
-        position: absolute;
-        bottom: 8%;
-        .tech {
-          margin: 1rem 0;
-          padding: 0.5em;
-          line-height: 1.9rem;
+      &__icons {
+        .link {
+          margin: 0.2em;
           &:hover {
-            font-size: 1.4rem;
-            box-shadow: 0 0 1rem rgba($color-primary, 1);
+            scale: 1.1;
           }
         }
       }
     }
 
-   
+    &:hover {
+      scale: 1.01;
+    }
+  }
+}
 
-//     @media(max-width:1530px){
-//       width: 21vw;
-//       height: 20vw;
-//     }
+.containerGithub {
+  margin: 1em 0;
+  &__tittle {
+    text-decoration: none;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: $color-neutral-light;
 
-//     @include respond(tab-land) {
-//       width: 24vw;
-//       height: 26vw;
-//     }
-
-//     @include respond(tab-port) {
-//       width: 33vw;
-//       height: 32vw;
-//     }
-
-//     @media (max-width: 720px) {
-//       width: 63vw;
-//       height: 50vw;
-//     }
-
-//     @include respond(phone) {
-//       width: 78vw;
-//       height: 50vw;
-//     }
-
-//     @media (max-width: 400px) {
-//       width: 74vw;
-//       height: 70vw;
-//     }
-
-//     @include respond(big-desktop) {
-//       width: 19vw;
-//       height: 20vw;
-//     }
-//   }
-
-//   @media(max-width:1530px){
-//     width: 90%;
-//   }
-
-//   @include respond(tab-land) {
-//     width: 100%;
-//     grid-template-rows: repeat(auto-fill, minmax(30%, 1fr));
-//     grid-template-columns: repeat(auto-fit, 30%);
-//   }
-
-//   @include respond(tab-port) {
-//     width: 100%;
-//     height: 150vh;
-//     // padding: 0 0;
-//     // margin: 0 0;
-//     grid-template-rows: repeat(auto-fill, minmax(22%, 1fr));
-//     grid-template-columns: repeat(auto-fit, 42%);
-//   }
-
-//   @media (max-width: 720px) {
-//     width: 100%;
-//     height: 280vh;
-//     grid-template-rows: repeat(auto-fill, minmax(15%, 1fr));
-//     grid-template-columns: repeat(auto-fit, 80%);
-//   }
-
-//   @include respond(phone) {
-//     width: 100%;
-//     grid-template-rows: repeat(auto-fill, minmax(13%, 1fr));
-//     grid-template-columns: repeat(auto-fit, 90%);
-//   }
-
-//   @media (max-width: 500px) {
-//     grid-template-rows: repeat(auto-fill, minmax(10%, 1fr));
-//   }
-
-//   @media (max-width: 400px) {
-//     width: 100%;
-//     grid-template-rows: repeat(auto-fill, minmax(12%, 1fr));
-//     grid-template-columns: repeat(auto-fit, 88%);
-//   }
-
-//   @media (max-width:350px){
-//     grid-template-rows: repeat(auto-fill, minmax(10%, 1fr));
-//     grid-template-columns: repeat(auto-fit, 86%);
-//   }
-
-//   @include respond(big-desktop) {
-//     width: 80%;
-//     grid-template-rows: repeat(auto-fill, minmax(30%, 1fr));
-//     grid-template-columns: repeat(auto-fit, 30%);
-//   }
-//   }
+    &:hover {
+      color: $color-secondary-light;
+    }
+  }
+  &__des {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    font-weight: 300;
+    margin: 0.5em 0;
+  }
+  &__techstack {
+    @include codestyle;
+    // margin:  1rem 0;
+    color: $color-neutral-dark;
+    position: absolute;
+    bottom: 8%;
+    .tech {
+      margin: 1rem 0;
+      padding: 0.5em;
+      line-height: 1.9rem;
+      &:hover {
+        font-size: 1.4rem;
+        box-shadow: 0 0 1rem rgba($color-primary, 1);
+      }
+    }
+  }
+}
 
 .btnContainer {
- 
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.show{
+.show {
   margin: 0 auto;
   margin-top: 2em;
 
