@@ -8,7 +8,7 @@ function Github() {
     <div className={styles.githubpage}>
       <h1 className={styles.heading}>Other Noteworthy Projects</h1>
       <h2 className={styles.heading__sub}>view the archive</h2>
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         {data.map((item) => (
           <div className={styles.box} key={item.id}>
             <div className={styles.upperside}>
@@ -54,7 +54,7 @@ function Github() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
       <div className={styles.btnContainer}>
       <Link href="https://github.com/JyotiKM29/">
         <button className={styles.show}>Show More</button>
