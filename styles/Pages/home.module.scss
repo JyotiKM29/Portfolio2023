@@ -8,6 +8,8 @@
   grid-template-columns:1rem repeat(4, 1fr) 1rem ;
   grid-template-rows:  18% 20% 1rem 32% 24% 18% 0%;
    grid-row-gap: 1vh;
+
+   overflow: hidden;
  
   // .navbar{
   //   padding: 3rem;
@@ -43,9 +45,9 @@
   .github{
      grid-column: 2/ span 4;
     grid-row: 5/span 1;
-    // border: 1px solid lightblue;
+    // border: 8px solid lightblue;
 
-    // overflow-x:auto;
+    overflow-x:hidden;
 
    }
   .contact{

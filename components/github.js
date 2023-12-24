@@ -6,9 +6,9 @@ import Link from "next/link";
 function Github() {
   return (
     <div className={styles.githubpage}>
-      <h1 className={styles.heading}>Other Noteworthy Projects</h1>
-      <h2 className={styles.heading__sub}>view the archive</h2>
-      {/* <div className={styles.container}>
+      <h1 className={styles.headingGithub}>Other Noteworthy Projects</h1>
+      <h2 className={styles.headingGithub__sub}>view the archive</h2>
+       <div className={styles.containerGithub}>
         {data.map((item) => (
           <div className={styles.box} key={item.id}>
             <div className={styles.upperside}>
@@ -43,10 +43,10 @@ function Github() {
             </div>
             <div className={styles.content}>
               <Link href={item?.link ?? "#"} 
-              className={styles.content__tittle}>
+              className={styles.containerGithub__tittle}>
               {item.tittle}</Link>
-              <p className={styles.content__des}>{item.des}</p>
-              <div className={styles.content__techstack}>
+              <p className={styles.containerGithub__des}>{item.des}</p>
+              <div className={styles.containerGithub__techstack}>
                 <span className={styles.tech}>{item.tech1}</span>
                 <span className={styles.tech}>{item.tech2}</span>
                 <span className={styles.tech}>{item.tech3}</span>
@@ -54,7 +54,7 @@ function Github() {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
       <div className={styles.btnContainer}>
       <Link href="https://github.com/JyotiKM29/">
         <button className={styles.show}>Show More</button>
