@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 function Hamburger() {
   const router = useRouter();
   const downloadResume = () => {
-    router.push("/Jyoti.pdf");
+    router.push("/Jyoti KM.pdf");
   };
 
   return (
