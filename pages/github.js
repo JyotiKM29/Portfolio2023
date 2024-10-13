@@ -7,7 +7,7 @@ function Github() {
   return (
     <div className={styles.githubpage}>
       <h1 className={styles.heading}>Other Noteworthy Projects</h1>
-      <Link href="https://github.com/JyotiKM29/">
+      <Link href="https://github.com/JyotiKM29?tab=repositories">
       <h2 className={styles.heading__sub}>view the archive</h2>
       </Link>
      
