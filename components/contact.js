@@ -44,7 +44,7 @@ function Contact(){
         <div className={styles.copyright}>
         <p className={styles.p}>designed & built with ❤️ by Jyoti KM</p>
         <p className={styles.p}>Total vistors: {count} </p>
-        <p className={styles.p}>copyright@2024</p>
+        <p className={styles.p}>copyright © {new Date().getFullYear()}</p>
         
         </div>
 
